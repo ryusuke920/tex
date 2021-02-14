@@ -1,0 +1,71 @@
+\documentclass[dvipdfmx,uplatex]{jsarticle}
+\def\vector#1{\mbox{\boldmath $#1$}}
+\usepackage{qexam} % 問題を書く時とかに必要なやつ
+\usepackage{setspace} % 行間開けるのに必要なやつ
+\usepackage{amsmath} % 数学やるのに必要なやつ
+\usepackage{bm} % 太字にするのに必要なやつ
+\usepackage{amssymb}
+\usepackage[hiresbb]{graphicx}
+\usepackage{ascmac}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{braket}
+\usepackage[colorlinks=true, bookmarks=true,
+bookmarksnumbered = true, bookmarkstype = toc, linkcolor = blue,
+urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[version=3]{mhchem}
+\makeatletter
+ \renewcommand{\theequation}{
+   \thesubsection.\arabic{equation}}
+  \@addtoreset{equation}{subsection}
+\title{春休み毎日微分方程式 Day 4（解答）}
+\author{公立はこだて未来大学　システム情報科学部　B2　日置竜輔}
+\date{\today}
+
+\begin{document}
+\begin{spacing}{1.6}
+\maketitle
+
+\question{問1}
+次の一階線形微分方程式を解け。
+\begin{qparts}
+    \qpart $ \displaystyle \frac{dy}{dx} - y = e ^ {2x} $ \\
+    一階線形微分方程式は一般的に次のように表される。\\
+    \begin{itembox}{公式}
+       \begin{equation}
+         \frac{dy}{dx} + p(x)y = q(x) \nonumber
+       \end{equation}
+    \end{itembox}
+     この時、解である $ y $は、\\
+     \begin{equation}
+       P(x) = \int p(x) dx \nonumber
+     \end{equation}
+     \begin{equation}
+       \mu (x) = e ^ {P(x)} \nonumber
+     \end{equation}
+     として、 $ \displaystyle y = \frac{1}{\mu} \int \mu q(x) dx $ で求められる。\\
+     この問題の場合だと、 $ p(x) =-1 $、$q(x) = e ^ {2x} $ となるので、 $ P(x) = - x $ となる。 \\
+     したがって、$ \mu (x) = e ^ {-x} $ となり、 $ y $ は次のように求められる。\\
+     \begin{eqnarray*}
+       y & = & \frac{1}{\mu} \int \mu q(x) dx \\
+       & = & \frac{1}{e ^ {-x}} \int e ^ {-x} e ^ {2x} dx \\
+       & = & \frac{1}{e ^ {-x}} \int e ^ x dx \\
+       & = & e ^ x (e ^ x + C) \\
+       & = & e ^ {2x} + Ce ^ x \qquad (Cは任意定数) \\
+     \end{eqnarray*}
+
+     \qpart {\rm I} で解いた微分方程式が解を満たすことを示せ。
+     {\rm I} で求めた $ y $ を実際に代入すると、 \\
+     \begin{eqnarray*}
+       \frac{dy}{dx} - y & = & {(e ^ {2x} + Ce ^ x)\prime} - (e ^ {2x} + Ce ^ x) \\
+       & = & 2 e ^ {2x} + Ce ^ x - e ^ {2x} - Ce ^ x \\
+       & = & e ^ {2x}
+     \end{eqnarray*}
+     したがって、この解は成り立つ。
+\end{qparts}
+
+\end{spacing}
+\end{document}
