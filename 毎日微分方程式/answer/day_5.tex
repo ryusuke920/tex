@@ -1,0 +1,61 @@
+\documentclass[dvipdfmx,uplatex]{jsarticle}
+\def\vector#1{\mbox{\boldmath $#1$}}
+\usepackage{qexam} % 問題を書く時とかに必要なやつ
+\usepackage{setspace} % 行間開けるのに必要なやつ
+\usepackage{amsmath} % 数学やるのに必要なやつ
+\usepackage{bm} % 太字にするのに必要なやつ
+\usepackage{amssymb}
+\usepackage[hiresbb]{graphicx}
+\usepackage{ascmac}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{braket}
+\usepackage[colorlinks=true, bookmarks=true,
+bookmarksnumbered = true, bookmarkstype = toc, linkcolor = blue,
+urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[version=3]{mhchem}
+\makeatletter
+ \renewcommand{\theequation}{
+   \thesubsection.\arabic{equation}}
+  \@addtoreset{equation}{subsection}
+\title{春休み毎日微分方程式 Day 5（解答）}
+\author{公立はこだて未来大学　システム情報科学部　B2　日置竜輔}
+\date{\today}
+
+\begin{document}
+\begin{spacing}{1.6}
+\maketitle
+
+\question{問1}
+以下の計算をせよ。
+\begin{qparts}
+    \qpart $ \displaystyle (D ^ 2 + D)(x ^ 3 - 3x) $ \quad ただし、$ \displaystyle D = \frac{d}{dx} $ と定義する。\\
+    微分演算子は普通の文字と同様の計算ができるので、展開して以下のように計算する。 \\
+    \begin{eqnarray*}
+      (D ^ 2 + D)(x ^ 3 - 3x) & = & D ^ 2 (x ^ 3 - 3x) + D (x ^ 3 - 3x)\\
+      & = & \frac{d^2}{dx}(x ^ 3 - 3x) + \frac{d}{dx}(x ^ 3 - 3x)\\
+      & = & (6x) + (3x ^ 2 - 3)\\
+      & = & 3x ^ 2  + 6x - 3
+    \end{eqnarray*}
+    と計算できる。\\
+    \begin{itembox}{微分演算子法の超基本事項}
+      {\rm I} \quad $ D $ を重ね掛けして複数回の微分を表現可能 \\
+      \begin{equation*}
+        D^2 = \frac{d^2}{dx},\qquad D^3 = \frac{d ^ 3}{dx}, \qquad D ^ n = \frac{d^n}{dx}
+      \end{equation*}
+      {\rm II}\quad $ D $ 定数はの前に出せる。\\
+      \begin{equation*}
+        D^naf(x) = aD^nf(x)
+      \end{equation*}
+      {\rm III}\quad $ D $は分配・結合ができる。\\
+      \begin{equation*}
+        (D ^ m + D ^ n)f(x) = D^mf(x) + D^nf(x)
+      \end{equation*}
+    \end{itembox}
+\end{qparts}
+\end{spacing}
+
+\end{document}
