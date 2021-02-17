@@ -1,0 +1,94 @@
+\documentclass[dvipdfmx,uplatex]{jsarticle}
+\def\vector#1{\mbox{\boldmath $#1$}}
+\usepackage{qexam} % 問題を書く時とかに必要なやつ
+\usepackage{setspace} % 行間開けるのに必要なやつ
+\usepackage{amsmath} % 数学やるのに必要なやつ
+\usepackage{bm} % 太字にするのに必要なやつ
+\usepackage{amssymb}
+\usepackage[hiresbb]{graphicx}
+\usepackage{ascmac}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{braket}
+\usepackage[colorlinks=true, bookmarks=true,
+bookmarksnumbered = true, bookmarkstype = toc, linkcolor = blue,
+urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[version=3]{mhchem}
+\makeatletter
+ \renewcommand{\theequation}{
+   \thesubsection.\arabic{equation}}
+  \@addtoreset{equation}{subsection}
+\title{春休み毎日微分方程式 Day 7（解答）}
+\author{公立はこだて未来大学　システム情報科学部　B2　日置竜輔}
+\date{\today}
+
+\begin{document}
+\begin{spacing}{1.6}
+\maketitle
+
+\question{問1}
+次の微分方程式を計算せよ。
+\begin{qparts}
+    \qpart $ \displaystyle \frac{dy}{dx} = 1 + y ^ 2 $ \\
+    これは {\bf 変数分離系}の形であるから、\\
+    \begin{equation*}
+      \frac{1}{1 + y ^ 2} \frac{dy}{dx} = 1
+    \end{equation*}
+    両辺を積分すると、\\
+    \begin{eqnarray*}
+      \int \frac{1}{1 + y ^ 2}dy & = & \int dx \\
+      \arctan y & = & x + C \qquad (Cは積分定数)
+    \end{eqnarray*}
+
+    \newpage
+
+    \qpart $ \displaystyle (x^2 + 1)\frac{dy}{dx} + y ^ 2 + 1 = 0, \qquad y(0) = 1 $ \\
+    {\bf I} と同様に変数分離を行うと、\\
+    \begin{equation*}
+      \frac{1}{y ^ 2 + 1} \frac{dy}{dx} = - \frac{1}{x ^ 2 + 1}dx
+    \end{equation*}
+    両辺を積分すると、\\
+    \begin{eqnarray*}
+      & \arctan y & = - \arctan x + C \qquad (Cは積分定数) \\
+      & \arctan y & + \arctan x = C
+    \end{eqnarray*}
+    となるので、両辺に $ \tan $ をとると、\\
+    \begin{equation}
+      \tan (\arctan y + \arctan x) = \tan C
+    \end{equation}
+    \begin{itembox}{$ \tan $ の加法定理}
+      \begin{equation*}
+        \tan(a + b) = \frac{\tan a + \tan b}{1 - \tan a \tan b}
+      \end{equation*}
+    \end{itembox}
+    であるから、(0.0.1)式に当てはめると、\\
+    \begin{equation}
+      \tan (\arctan y + \arctan x) = \frac{y + x}{1 - xy}
+    \end{equation}
+    \begin{itembox}[l]{三角関数の逆関数との関係}
+      \begin{eqnarray*}
+        \sin(\arcsin x) & = & x \\
+        \cos(\arccos x) & = & x \\
+        \tan(\arctan x) & = & x \\
+      \end{eqnarray*}
+    \end{itembox}
+    したがって、(0.0.1),(0.0.2)式より、\\
+    \begin{equation*}
+      \frac{x + y}{1 - xy} = \tan C
+    \end{equation*}
+    とが得られる。\\
+    あとは、初期値条件に $ y(0) = 1 $ を代入すると、
+    \begin{equation*}
+      \tan C = 1
+    \end{equation*}
+    が得られるので、求める特殊解は、\\
+    \begin{equation*}
+      y = \frac{1 - x}{1 + x}
+    \end{equation*}
+  \end{qparts}
+\end{spacing}
+
+\end{document}
