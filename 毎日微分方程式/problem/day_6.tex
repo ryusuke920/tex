@@ -1,0 +1,43 @@
+\documentclass[dvipdfmx,uplatex]{jsarticle}
+\def\vector#1{\mbox{\boldmath $#1$}}
+\usepackage{qexam} % 問題を書く時とかに必要なやつ
+\usepackage{setspace} % 行間開けるのに必要なやつ
+\usepackage{amsmath} % 数学やるのに必要なやつ
+\usepackage{bm} % 太字にするのに必要なやつ
+\usepackage{amssymb}
+\usepackage[hiresbb]{graphicx}
+\usepackage{ascmac}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{braket}
+\usepackage[colorlinks=true, bookmarks=true,
+bookmarksnumbered = true, bookmarkstype = toc, linkcolor = blue,
+urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[version=3]{mhchem}
+\makeatletter
+ \renewcommand{\theequation}{
+   \thesubsection.\arabic{equation}}
+  \@addtoreset{equation}{subsection}
+\title{春休み毎日微分方程式 Day 6（問題）}
+\author{公立はこだて未来大学　システム情報科学部　B2　日置竜輔}
+\date{\today}
+
+\begin{document}
+\begin{spacing}{1.6}
+\maketitle
+
+\question{問1}
+以下の証明をせよ。 ($ \displaystyle D = \frac{d}{dx} $ を表す。)
+\begin{qparts}
+    \qpart {\bm 微分演算子} と {\bm 定数変化法}を用いて、
+    $ \displaystyle \frac{dy}{dx} + ay = f(x) から $
+    \begin{equation}
+      \frac{1}{D + a}f(x) = e ^ {-ax} \left(\int e ^ {ax} f(x) dx \right )
+    \end{equation}を導出せよ。 \\
+  \end{qparts}
+\end{spacing}
+
+\end{document}
