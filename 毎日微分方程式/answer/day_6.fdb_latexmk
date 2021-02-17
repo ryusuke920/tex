@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1613396778 "day_5.dvi" "day_5.pdf" "day_5" 1613396780
-  "day_5.dvi" 1613396777 3772 87a35c3f52a7c0cf52c88f4ddb18d688 "latex"
+["dvipdf"] 1613578646 "day_6.dvi" "day_6.pdf" "day_6" 1613578648
+  "day_6.dvi" 1613578646 4788 7ffbe5db8b5a23a47be8fa617a4edd7a "latex"
   (generated)
-  "day_5.pdf"
-["latex"] 1613396774 "day_5.tex" "day_5.dvi" "day_5" 1613396780
+  "day_6.pdf"
+["latex"] 1613578643 "day_6.tex" "day_6.dvi" "day_6" 1613578648
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -208,11 +208,11 @@
   "/usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf" 1598393674 39451 15a3ebee027466ecb89701aa91dfebaf ""
   "/usr/local/texlive/2020/texmf-var/web2c/euptex/uplatex.fmt" 1606411529 2583328 054e649ad26b2ff1a8d6958649911495 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "day_5.aux" 1613396777 652 0482c830dbea8b837b863164a9d12cd3 "latex"
-  "day_5.out" 1613396777 0 d41d8cd98f00b204e9800998ecf8427e "latex"
-  "day_5.tex" 1613396772 2236 281f0a85425f3e38d88484aeda942e6e ""
+  "day_6.aux" 1613578646 652 0482c830dbea8b837b863164a9d12cd3 "latex"
+  "day_6.out" 1613578646 0 d41d8cd98f00b204e9800998ecf8427e "latex"
+  "day_6.tex" 1613578639 2829 54526bd65937ac08cc1879446c1d955b ""
   (generated)
-  "day_5.log"
-  "day_5.aux"
-  "day_5.dvi"
-  "day_5.out"
+  "day_6.out"
+  "day_6.log"
+  "day_6.dvi"
+  "day_6.aux"
