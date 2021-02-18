@@ -1,0 +1,50 @@
+\documentclass[dvipdfmx,uplatex]{jsarticle}
+\def\vector#1{\mbox{\boldmath $#1$}}
+\usepackage{qexam} % 問題を書く時とかに必要なやつ
+\usepackage{setspace} % 行間開けるのに必要なやつ
+\usepackage{amsmath} % 数学やるのに必要なやつ
+\usepackage{bm} % 太字にするのに必要なやつ
+\usepackage{cases} % 連立方程式を書くのに必要なやつ
+\usepackage{amssymb}
+\usepackage[hiresbb]{graphicx}
+\usepackage{ascmac}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{braket}
+\usepackage[colorlinks=true, bookmarks=true,
+bookmarksnumbered = true, bookmarkstype = toc, linkcolor = blue,
+urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[version=3]{mhchem}
+\makeatletter
+ \renewcommand{\theequation}{
+   \thesubsection.\arabic{equation}}
+  \@addtoreset{equation}{subsection}
+\title{夏休み毎日積分 Day1（問題）}
+\author{公立はこだて未来大学　システム情報科学部　B2　日置竜輔}
+\date{2020年8月1日}
+
+\begin{document}
+
+\maketitle
+
+\begin{itembox}[c]{day 1 }
+    \begin{center}
+        次の不定積分を求めよ。\quad (積分定数はCとする)\\
+        ※とりあえず初日は自分も作り方を慣れていないので、公式の確認としてめちゃ簡単にしました。
+    \end{center}
+\end{itembox}
+\begin{align*}
+    &\int sinx dx \\
+    &\int cosx dx \\
+    &\int \frac{1}{x} dx \\
+    &\int x^a dx \\
+    &\int logx dx \\
+    &\int e^x dx \\
+    &\int \frac{1}{cos^2x} dx \\
+    &\int \frac{1}{sin^2x} dx \\
+    &\int a^x dx
+\end{align*}
+\end{document}

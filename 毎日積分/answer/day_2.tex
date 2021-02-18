@@ -1,0 +1,81 @@
+\documentclass[dvipdfmx,uplatex]{jsarticle}
+\def\vector#1{\mbox{\boldmath $#1$}}
+\usepackage{qexam} % 問題を書く時とかに必要なやつ
+\usepackage{setspace} % 行間開けるのに必要なやつ
+\usepackage{amsmath} % 数学やるのに必要なやつ
+\usepackage{bm} % 太字にするのに必要なやつ
+\usepackage{cases} % 連立方程式を書くのに必要なやつ
+\usepackage{amssymb}
+\usepackage[hiresbb]{graphicx}
+\usepackage{ascmac}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{braket}
+\usepackage[colorlinks=true, bookmarks=true,
+bookmarksnumbered = true, bookmarkstype = toc, linkcolor = blue,
+urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[version=3]{mhchem}
+\makeatletter
+ \renewcommand{\theequation}{
+   \thesubsection.\arabic{equation}}
+  \@addtoreset{equation}{subsection}
+\title{夏休み毎日積分 Day2（解答）}
+\author{公立はこだて未来大学　システム情報科学部　B2　日置竜輔}
+\date{2020年8月2日}
+
+\begin{document}
+
+\maketitle
+
+\begin{itembox}[c]{day 2}
+    \begin{center}
+        次の積分を求めよ。\\
+        ※少しずつレベル上げていきます〜
+    \end{center}
+\end{itembox}
+
+\begin{qparts}
+  \qpart
+  \begin{equation*}
+    \int \sin 3x \cos 5x dx
+  \end{equation*}
+
+和積の公式を用いて考えると、
+\begin{eqnarray*}
+    \int \sin 3x \cos 5xdx
+    & = & \frac{1}{2} \int \{ \sin (3x+5x) + \sin (3x-5x) \} dx \\
+    & = & \frac{1}{2} \int \sin 8x + \sin (-2x) dx \\
+    & = & \frac{1}{2} \int (\sin 8x - \sin 2x) dx \\
+    & = & \frac{1}{2} \left\{ \frac{1}{8} (-\cos 8x) - \frac{1}{2} (-\cos 2x) \right\} + C \\
+    & = & -\frac{1}{16} \cos 8x + \frac{1}{4} \cos 2x + C \quad (Cは積分定数とする)
+\end{eqnarray*}
+
+\newpage
+
+  \qpart
+  \begin{equation*}
+    \int \cos 3x \cos 5x dx
+  \end{equation*}
+
+問1と同様に和積の公式を用いて考えると、
+\begin{eqnarray*}
+    \int \cos 3x \cos 5x dx & = & \frac{1}{2} \int \left\{ \cos (3x+5x) + \cos (3x - 5x) \right\} dx \\
+    & = & \frac{1}{2} \int \cos 8x + \cos (-2x) dx \\
+    & = & \frac{1}{2} \int \left( \cos 8x + \cos 2x \right) dx \\
+    & = & \frac{1}{2} \left( \frac{1}{8} \sin 8x - \frac{1}{2} \sin 2x \right) + C \\
+    & = & \frac{1}{16}\sin 8x + \frac{1}{4} \sin 2x + C \quad (Cは積分定数とする)
+\end{eqnarray*}
+\end{qparts}
+
+\begin{boxnote}
+    〜補足〜
+    \begin{center}
+        今日は和積（積和ですね）の問題を出題しました。\\
+        去年の解析レベルの問題なので、ぜひできるようにしてください。 \\
+        わからなければ自分で調べるか、個別に聞いてください。
+    \end{center}
+\end{boxnote}
+\end{document}
