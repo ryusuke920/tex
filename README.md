@@ -37,7 +37,9 @@ TeXのテンプレートや成果物を載せています
 &ensp; [問題](https://github.com/ryusuke920/tex/blob/main/%E6%AF%8E%E6%97%A5%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F/problem/day_8.pdf)
 &ensp; [解答](https://github.com/ryusuke920/tex/blob/main/%E6%AF%8E%E6%97%A5%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F/answer/day_8.pdf)
 
-9. まだ作ってないよ、何にしようかな、順番的に行列とか使いたいね＾＿＾
+9. 対角化を用いた連立微分方程式
+&ensp; [問題](https://github.com/ryusuke920/tex/blob/main/%E6%AF%8E%E6%97%A5%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F/problem/day_9.pdf)
+&ensp; [解答](https://github.com/ryusuke920/tex/blob/main/%E6%AF%8E%E6%97%A5%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F/answer/day_9.pdf)
 
 ## 毎日積分
 2年前期の必修科目である確率論, システム数学基礎の講義後に習った内容を忘れないよう自作問題を作成し、夏休みに毎日解くための問題です  
