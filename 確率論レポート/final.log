@@ -1,0 +1,1459 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.7.28)  7 AUG 2020 13:10
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/ryusuke/Downloads/Latex/確率論/final.tex
+(/Users/ryusuke/Downloads/Latex/確率論/final.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-06> (/usr/local/texlive/2020/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+
+/usr/local/texlive/2020/texmf-dist/tex/platex/jsclasses/jsarticle.cls:26: LaTeX Error: This file needs format `pLaTeX2e'
+               but this is `LaTeX2e'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \NeedsTeXFormat{pLaTeX2e}
+                              
+The current input file will not be processed further,
+because it was written for some other flavor of TeX.
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip47
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen134
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen135
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count167
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count168
+\leftroot@=\count169
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count170
+\DOTSCASE@=\count171
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen136
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count172
+\c@MaxMatrixCols=\count173
+\dotsspace@=\muskip16
+\c@parentequation=\count174
+\dspbrk@lvl=\count175
+\tag@help=\toks16
+\row@=\count176
+\column@=\count177
+\maxfields@=\count178
+\andhelp@=\toks17
+\eqnshift@=\dimen137
+\alignsep@=\dimen138
+\tagshift@=\dimen139
+\tagwidth@=\dimen140
+\totwidth@=\dimen141
+\lineht@=\dimen142
+\@envbody=\toks18
+\multlinegap=\skip48
+\multlinetaggap=\skip49
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/ascmac/ascmac.sty
+Package: ascmac 2020/01/15 v2.1 ascmac wrapper (community edition) 
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/ascmac/tascmac.sty
+Package: tascmac 2020/01/15 v2.1 ascmac package (community edition) 
+Package tascmac Info: Assuming pdfLaTeX, XeLaTeX or LuaLaTeX on input line 44.
+\scb@x=\box47
+\scscb@x=\box48
+\@bw=\dimen143
+\@nbox=\box49
+\@nbody=\box50
+\@scw=\dimen144
+\ascmac@hoboxa=\box51
+\ascmac@hoboxb=\box52
+\@itemh=\dimen145
+\@iboxpos=\toks20
+\@iboxstr=\box53
+\@bwsp=\box54
+\@@bwsp=\box55
+\@bcal=\count179
+\shaderule=\dimen146
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count180
+\l__pdf_internal_box=\box56
+) (/Users/ryusuke/Downloads/Latex/確率論/final.aux)
+\openout1 = `final.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:8: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \begin{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:10: Undefined control sequence.
+l.10 \maketitle
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character 次 (U+6B21)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 次
+        の問題を解き，解答過程を示したレポートを提出�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character の (U+306E)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 次の
+           問題を解き，解答過程を示したレポートを提出�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character 問 (U+554F)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 次の問
+              題を解き，解答過程を示したレポートを提出�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character 題 (U+984C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 次の問題
+                 を解き，解答過程を示したレポートを提出�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character を (U+3092)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 次の問題を
+                    解き，解答過程を示したレポートを提出�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character 解 (U+89E3)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 次の問題を解
+                       き，解答過程を示したレポートを提出�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character き (U+304D)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 次の問題を解き
+                          ，解答過程を示したレポートを提出�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character ， (U+FF0C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 次の問題を解き，
+                             解答過程を示したレポートを提出�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character 解 (U+89E3)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 次の問題を解き，解
+                                答過程を示したレポートを提出�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character 答 (U+7B54)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 次の問題を解き，解答
+                                   過程を示したレポートを提出�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character 過 (U+904E)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 次の問題を解き，解答過
+                                      程を示したレポートを提出�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character 程 (U+7A0B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 次の問題を解き，解答過程
+                                         を示したレポートを提出�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character を (U+3092)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 次の問題を解き，解答過程を
+                                            示したレポートを提出�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character 示 (U+793A)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 次の問題を解き，解答過程を示
+                                               したレポートを提出�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character し (U+3057)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 次の問題を解き，解答過程を示し
+                                                  たレポートを提出�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character た (U+305F)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...問題を解き，解答過程を示した
+                                                  レポートを提出し�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character レ (U+30EC)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...題を解き，解答過程を示したレ
+                                                  ポートを提出しな�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character ポ (U+30DD)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...を解き，解答過程を示したレポ
+                                                  ートを提出しなさ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character ー (U+30FC)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...解き，解答過程を示したレポー
+                                                  トを提出しなさい．\\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character ト (U+30C8)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...き，解答過程を示したレポート
+                                                  を提出しなさい．\\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character を (U+3092)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...，解答過程を示したレポートを
+                                                  提出しなさい．\\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character 提 (U+63D0)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...解答過程を示したレポートを提
+                                                  出しなさい．\\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character 出 (U+51FA)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...答過程を示したレポートを提出
+                                                  しなさい．\\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character し (U+3057)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...過程を示したレポートを提出し
+                                                  なさい．\\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character な (U+306A)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...程を示したレポートを提出しな
+                                                  さい．\\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character さ (U+3055)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...を示したレポートを提出しなさ
+                                                  い．\\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character い (U+3044)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...示したレポートを提出しなさい
+                                                  ．\\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:15: Package inputenc Error: Unicode character ． (U+FF0E)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...したレポートを提出しなさい．
+                                                  \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 �
+      ��だし，解答は単に答えを書くのではなく，どのよ�...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character た (U+305F)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 た
+        だし，解答は単に答えを書くのではなく，どのよ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character だ (U+3060)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ただ
+           し，解答は単に答えを書くのではなく，どのよ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character し (U+3057)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ただし
+              ，解答は単に答えを書くのではなく，どのよ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character ， (U+FF0C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ただし，
+                 解答は単に答えを書くのではなく，どのよ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character 解 (U+89E3)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ただし，解
+                    答は単に答えを書くのではなく，どのよ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character 答 (U+7B54)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ただし，解答
+                       は単に答えを書くのではなく，どのよ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character は (U+306F)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ただし，解答は
+                          単に答えを書くのではなく，どのよ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character 単 (U+5358)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ただし，解答は単
+                             に答えを書くのではなく，どのよ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character に (U+306B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ただし，解答は単に
+                                答えを書くのではなく，どのよ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character 答 (U+7B54)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ただし，解答は単に答
+                                   えを書くのではなく，どのよ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character え (U+3048)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ただし，解答は単に答え
+                                      を書くのではなく，どのよ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character を (U+3092)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ただし，解答は単に答えを
+                                         書くのではなく，どのよ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character 書 (U+66F8)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ただし，解答は単に答えを書
+                                            くのではなく，どのよ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character く (U+304F)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ただし，解答は単に答えを書く
+                                               のではなく，どのよ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character の (U+306E)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ただし，解答は単に答えを書くの
+                                                  ではなく，どのよ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character で (U+3067)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...し，解答は単に答えを書くので
+                                                  はなく，どのよう�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character は (U+306F)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...，解答は単に答えを書くのでは
+                                                  なく，どのように�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character な (U+306A)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...解答は単に答えを書くのではな
+                                                  く，どのように考�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character く (U+304F)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...答は単に答えを書くのではなく
+                                                  ，どのように考え�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character ， (U+FF0C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...は単に答えを書くのではなく，
+                                                  どのように考えた�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character ど (U+3069)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...単に答えを書くのではなく，ど
+                                                  のように考えたか�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character の (U+306E)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...に答えを書くのではなく，どの
+                                                  ように考えたかが�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character よ (U+3088)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...答えを書くのではなく，どのよ
+                                                  うに考えたかが分�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character う (U+3046)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...えを書くのではなく，どのよう
+                                                  に考えたかが分か�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character に (U+306B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...を書くのではなく，どのように
+                                                  考えたかが分かる�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character 考 (U+8003)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...書くのではなく，どのように考
+                                                  えたかが分かるよ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character え (U+3048)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...くのではなく，どのように考え
+                                                  たかが分かるよう�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character た (U+305F)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...のではなく，どのように考えた
+                                                  かが分かるように�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character か (U+304B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...ではなく，どのように考えたか
+                                                  が分かるように書�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character が (U+304C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...はなく，どのように考えたかが
+                                                  分かるように書き�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character 分 (U+5206)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...なく，どのように考えたかが分
+                                                  かるように書きな�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character か (U+304B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...く，どのように考えたかが分か
+                                                  るように書きなさ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character る (U+308B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...，どのように考えたかが分かる
+                                                  ように書きなさい．
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character よ (U+3088)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...どのように考えたかが分かるよ
+                                                  うに書きなさい．
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character う (U+3046)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...のように考えたかが分かるよう
+                                                  に書きなさい．
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character に (U+306B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...ように考えたかが分かるように
+                                                  書きなさい．
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character 書 (U+66F8)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...うに考えたかが分かるように書
+                                                  きなさい．
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character き (U+304D)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...に考えたかが分かるように書き
+                                                  なさい．
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character な (U+306A)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...考えたかが分かるように書きな
+                                                  さい．
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character さ (U+3055)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...えたかが分かるように書きなさ
+                                                  い．
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character い (U+3044)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...たかが分かるように書きなさい
+                                                  ．
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:16: Package inputenc Error: Unicode character ． (U+FF0E)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...かが分かるように書きなさい．
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:18: LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \begin{description}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19     \item [問題]
+                        あるサイコロを n 回投げたとき，i の�...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character あ (U+3042)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19     \item [問題] あ
+                           るサイコロを n 回投げたとき，i の�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character る (U+308B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19     \item [問題] ある
+                              サイコロを n 回投げたとき，i の�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character サ (U+30B5)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19     \item [問題] あるサ
+                                 イコロを n 回投げたとき，i の�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character イ (U+30A4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19     \item [問題] あるサイ
+                                    コロを n 回投げたとき，i の�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character コ (U+30B3)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19     \item [問題] あるサイコ
+                                       ロを n 回投げたとき，i の�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character ロ (U+30ED)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19     \item [問題] あるサイコロ
+                                          を n 回投げたとき，i の�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character を (U+3092)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19     \item [問題] あるサイコロを
+                                              n 回投げたとき，i の�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character 回 (U+56DE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...\item [問題] あるサイコロを n 回
+                                                  投げたとき，i の目...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character 投 (U+6295)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...em [問題] あるサイコロを n 回投
+                                                  げたとき，i の目が...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character げ (U+3052)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...[問題] あるサイコロを n 回投げ
+                                                  たとき，i の目が出...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character た (U+305F)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...�題] あるサイコロを n 回投げた
+                                                  とき，i の目が出る...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character と (U+3068)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...�] あるサイコロを n 回投げたと
+                                                  き，i の目が出る回...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character き (U+304D)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...あるサイコロを n 回投げたとき
+                                                  ，i の目が出る回数...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character ， (U+FF0C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...るサイコロを n 回投げたとき，
+                                                  i の目が出る回数を...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character の (U+306E)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...�イコロを n 回投げたとき，i の
+                                                  目が出る回数を Xi �...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character 目 (U+76EE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...�コロを n 回投げたとき，i の目
+                                                  が出る回数を Xi で�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character が (U+304C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...�ロを n 回投げたとき，i の目が
+                                                  出る回数を Xi で表�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character 出 (U+51FA)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...�を n 回投げたとき，i の目が出
+                                                  る回数を Xi で表す�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character る (U+308B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...� n 回投げたとき，i の目が出る
+                                                  回数を Xi で表す．\\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character 回 (U+56DE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ... 回投げたとき，i の目が出る回
+                                                  数を Xi で表す．\\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character 数 (U+6570)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...�投げたとき，i の目が出る回数
+                                                  を Xi で表す．\\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character を (U+3092)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...�げたとき，i の目が出る回数を
+                                                   Xi で表す．\\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character で (U+3067)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...とき，i の目が出る回数を Xi で
+                                                  表す．\\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character 表 (U+8868)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...き，i の目が出る回数を Xi で表
+                                                  す．\\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character す (U+3059)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...，i の目が出る回数を Xi で表す
+                                                  ．\\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:19: Package inputenc Error: Unicode character ． (U+FF0E)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...i の目が出る回数を Xi で表す．
+                                                  \\
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:20: Package inputenc Error: Unicode character こ (U+3053)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20     こ
+            のとき，以下の問いに答えよ．\\
+(That makes 100 errors; please try again.) 
+Here is how much of TeX's memory you used:
+ 1405 strings out of 480608
+ 18143 string characters out of 5903630
+ 249247 words of memory out of 5000000
+ 17353 multiletter control sequences out of 15000+600000
+ 532434 words of font info for 25 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 30i,1n,31p,263b,55s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+/Users/ryusuke/Downloads/Latex/確率論/final.tex:20:  ==> Fatal error occurred, no output PDF file produced!

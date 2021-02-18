@@ -1,0 +1,59 @@
+\documentclass[12pt,a4paper]{jsarticle}
+\usepackage {amsmath}
+\usepackage {amssymb}
+\usepackage {ascmac}
+
+\begin{document}
+
+\begin{description}
+    \item [問2] 問 1 の同時確率分布から Xi の周辺確率分布を求めよ．
+\end{description}
+
+X_{i}の確率分布はjの出る回数によらずに全ての場合での和を求めれば良い。\\
+したがって、問1の結果より、i ~=~ k回、すなわちX_{i}~=~kの時の周辺確率分布は、\\
+
+~\\
+(a)i~,~jが共に奇数であるとき、\\
+\begin{align*}
+    & \sum^n_{l = 1} \frac{n!}{k!~l!~(n-k-l)!} \left(\frac{1}{9}\right)^k \left(\frac{1}{9}\right)^l \left(\frac{7}{9}\right)^{n-k-l} \\
+    &= \sum^n_{l = 1} \frac{n!(n-k)!}{k!~l!~(n-k-l)!(n-k)!} \left(\frac{1}{9}\right)^k \left(\frac{1}{9}\right)^l \left(\frac{7}{9}\right)^{n-k-l} \\
+    &= \frac{n!}{k!(n-k)!}\left(\frac{1}{9}\right)^k \sum^n_{l = 1}\frac{(n-k)!}{l!(n-k-l)!}\left(\frac{1}{9}\right)^l\left(\frac{7}{9}\right)^{n-k-l} \\
+    &= {}_n C_k \left(\frac{1}{9}\right)^k \sum^n_{l = 1} {}_{n-k} C_l \left(\frac{1}{9}\right)^l\left(\frac{7}{9}\right)^{n-k-l} \\
+    &= {}_n C_k \left(\frac{1}{9}\right)^k \left(\frac{1}{9}~+~\frac{7}{9}\right)^{n-k} \\
+    &= {}_n C_k \left(\frac{1}{9}\right)^k \left(\frac{8}{9}\right)^{n-k}
+\end{align*}
+
+~\\
+(b)i~が奇数~,~jが偶数であるとき、\\
+\begin{align*}
+    & \sum^n_{l = 1} \frac{n!}{k!~l!~(n-k-l)!} \left(\frac{1}{9}\right)^k \left(\frac{2}{9}\right)^l \left(\frac{2}{3}\right)^{n-k-l} \\
+    &= \sum^n_{l = 1} \frac{n!(n-k)!}{k!~l!~(n-k-l)!(n-k)!} \left(\frac{1}{9}\right)^k \left(\frac{2}{9}\right)^l \left(\frac{2}{3}\right)^{n-k-l} \\
+    &= \frac{n!}{k!(n-k)!}\left(\frac{1}{9}\right)^k \sum^n_{l = 1}\frac{(n-k)!}{l!(n-k-l)!}\left(\frac{1}{9}\right)^l\left(\frac{2}{3}\right)^{n-k-l} \\
+    &= {}_n C_k \left(\frac{1}{9}\right)^k \sum^n_{l = 1} {}_{n-k} C_l \left(\frac{2}{9}\right)^l\left(\frac{2}{3}\right)^{n-k-l} \\
+    &= {}_n C_k \left(\frac{1}{9}\right)^k \left(\frac{2}{9}~+~\frac{2}{3}\right)^{n-k} \\
+    &= {}_n C_k \left(\frac{1}{9}\right)^k \left(\frac{8}{9}\right)^{n-k}
+\end{align*}
+
+~\\
+(c)i~が偶数~,~jが奇数であるとき、\\
+\begin{align*}
+    & \sum^n_{l = 1} \frac{n!}{k!~l!~(n-k-l)!} \left(\frac{2}{9}\right)^k \left(\frac{1}{9}\right)^l \left(\frac{2}{3}\right)^{n-k-l} \\
+    &= \sum^n_{l = 1} \frac{n!(n-k)!}{k!~l!~(n-k-l)!(n-k)!} \left(\frac{2}{9}\right)^k \left(\frac{1}{9}\right)^l \left(\frac{2}{3}\right)^{n-k-l} \\
+    &= \frac{n!}{k!(n-k)!}\left(\frac{2}{9}\right)^k \sum^n_{l = 1}\frac{(n-k)!}{l!(n-k-l)!}\left(\frac{1}{9}\right)^l\left(\frac{2}{3}\right)^{n-k-l} \\
+    &= {}_n C_k \left(\frac{2}{9}\right)^k \sum^n_{l = 1} {}_{n-k} C_l \left(\frac{1}{9}\right)^l\left(\frac{2}{3}\right)^{n-k-l} \\
+    &= {}_n C_k \left(\frac{2}{9}\right)^k \left(\frac{1}{9}~+~\frac{2}{3}\right)^{n-k} \\
+    &= {}_n C_k \left(\frac{2}{9}\right)^k \left(\frac{7}{9}\right)^{n-k}
+\end{align*}
+
+~\\
+(d)i~,~jが共に偶数であるとき、\\
+\begin{align*}
+    & \sum^n_{l = 1} \frac{n!}{k!~l!~(n-k-l)!} \left(\frac{2}{9}\right)^k \left(\frac{2}{9}\right)^l \left(\frac{5}{9}\right)^{n-k-l} \\
+    &= \sum^n_{l = 1} \frac{n!(n-k)!}{k!~l!~(n-k-l)!(n-k)!} \left(\frac{2}{9}\right)^k \left(\frac{2}{9}\right)^l \left(\frac{5}{9}\right)^{n-k-l} \\
+    &= \frac{n!}{k!(n-k)!}\left(\frac{2}{9}\right)^k \sum^n_{l = 1}\frac{(n-k)!}{l!(n-k-l)!}\left(\frac{2}{9}\right)^l\left(\frac{5}{9}\right)^{n-k-l} \\
+    &= {}_n C_k \left(\frac{2}{9}\right)^k \sum^n_{l = 1} {}_{n-k} C_l \left(\frac{2}{9}\right)^l\left(\frac{5}{9}\right)^{n-k-l} \\
+    &= {}_n C_k \left(\frac{2}{9}\right)^k \left(\frac{2}{9}~+~\frac{5}{9}\right)^{n-k} \\
+    &= {}_n C_k \left(\frac{2}{9}\right)^k \left(\frac{7}{9}\right)^{n-k}
+\end{align*}
+
+\end{document}

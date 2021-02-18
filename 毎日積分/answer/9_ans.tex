@@ -1,0 +1,56 @@
+\documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
+
+\usepackage {amsmath}
+\usepackage {amssymb}
+\usepackage {ascmac}
+\usepackage {tikz}
+\usetikzlibrary{intersections, calc, arrows}
+
+\title{夏休み毎日積分~9日目(解答)}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{flushright}
+    \author{作成者:ryusuke.h}
+\end{flushright}
+
+\begin{itembox}{day 9 }
+    \begin{center}
+        次の定積分を求めよ。\\
+        ※今日はガウス積分です。
+    \end{center}
+\end{itembox}
+
+\begin{description}
+    \item [問1] {\displaystyle} \iint_D xdxdy ~~~~~ D = \{~(x, y) ~|~ x + y < 2 , x > 0, y > 0~\}
+\end{description}
+
+\begin{align*}
+    \iint_D xdxdy &= \int_0^2 dx \int_0^{2-x} xdy \\
+    &= \int_0^2 \left(x{\left[}y{\right]_0^{2-x}}\right)dx = \int_0^2 x\left(2 - x\right) dx = \left[x^2 - \frac{1}{3}x^3\right]_0^2  = \frac{4}{3}
+\end{align*}
+
+\begin{description}
+    \item [問2] {\displaystyle} \iint_D (1 - x - y)dxdy ~~~~~ D = \{~(x, y) ~|~ x + y \leqq  1 , x \geqq 0, y \geqq 0~\}
+\end{description}
+
+\begin{align*}
+    \iint_D (1 - x - y)dxdy &= \int_0^1 \left\{\int_0^{1-x} (1 - x - y)dy\right\}dx\\
+    &= \int_0^1 \left[-\frac{(1 - x - y)^2}{2}\right]_0^{1-x} dx \\
+    &= \int_0^1 \frac{(1-x)^2}{2} dx \\
+    &= \left[ - \frac{(1-x)^3}{6}\right]_0^1\\
+    &= \frac{1}{6}
+\end{align*}
+
+\begin{boxnote}
+    〜補足〜
+    \begin{center}
+        再び重積分を行いました。\\
+        グラフを想像したら比較的容易に溶ける問題です。\\
+        解説でわからなければ自分で調べるか、個別に聞いてください。
+    \end{center}
+\end{boxnote}
+
+\end{document}

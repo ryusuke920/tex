@@ -1,0 +1,75 @@
+\documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
+
+\usepackage {amsmath}
+\usepackage {amssymb}
+\usepackage {ascmac}
+\usepackage {tikz}
+\usetikzlibrary{intersections, calc, arrows}
+
+\title{夏休み毎日積分~10日目(解答)}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{flushright}
+    \author{作成者:ryusuke.h}
+\end{flushright}
+
+\begin{itembox}{day 10 }
+    \begin{center}
+        次の定積分を求めよ。\\
+        今日も今日とて重積分の問題です。\\
+        飽きてきたと思うので、明日は変わった問題を出題してみます。
+    \end{center}
+\end{itembox}
+
+\begin{description}
+    \item [問1] {\displaystyle} \iint_D \sqrt{y}dxdy ~~~~D = \left\{(x,y)~|~\sqrt{\frac{x}{a}} + \sqrt{\frac{y}{b}}~\leqq~1~~~(a~>~0,~b~>~0)\right\}
+\end{description}
+
+\begin{align*}
+    &{\displaystyle}\sqrt{\frac{x}{a}} + \sqrt{\frac{y}{b}} ~=~ 1~のとき~~x ~=~a\left(1~-~\sqrt{\frac{y}{b}}\right)^2 から、\\
+    &D = \left\{(x,y)~:~0 ~\leqq~ x ~\leqq~ a\left(1 ~-~\sqrt{\frac{y}{b}}\right)^2,~0 ~\leqq~y~\leqq~b\right\}となるので、\\
+\end{align*}
+
+\begin{align*}
+    &\iint_D \sqrt{y}dxdy ~=~ \int_0^b\left(\int_0^a\left(1 - \sqrt{\frac{y}{b}}\right)\sqrt{y}dx\right)~dy 
+    = \int_0^b \sqrt{y}\left[x\right]_{x=0}^{x=a\left(1-\sqrt{\frac{y}{b}}\right)^2}dy \\
+    &= a\int_0^b \sqrt{y}\left(1-\sqrt{\frac{y}{b}}\right)^2dy = a\int_0^b\left(\sqrt{y}-\frac{2y}{\sqrt{b}}+\frac{y^{\frac{3}{2}}}{b}\right)dy \\
+    &= a\left[\frac{2}{3}y^{\frac{3}{2}} - \frac{2}{\sqrt{b}}frac{y^2}{2} + \frac{1}{b}\frac{2}{5}y^{\frac{5}{2}}\right]_0^b\\
+    &= \frac{1}{15}ab^{\frac{3}{2}}
+\end{align*}
+
+\begin{description}
+    \item [問2] {\displaystyle} \int_0^{\frac{\pi}{2}} dx \int_0^{\frac{\pi}{2}} \sin(x + y)dy 
+\end{description}
+
+\begin{align*}
+    \int_0^{\frac{\pi}{2}} \sin(x+y) dy &= \left[-\cos(x+y)\right]_{y = 0}^{y = \frac{\pi}{2}} \\
+    &= \left\{-\cos(x + \frac{\pi}{2})\right\} - \left(-\cos(x)\right) \\
+\end{align*}
+
+ここで、\cos\left(x + \frac{\pi}{2}\right) = -\sin{x}を用いると、
+
+\begin{align*}
+    \left\{-\cos(x + \frac{\pi}{2})\right\} - \left(-\cos(x)\right)  = \sin{x} + \cos{x}\\
+\end{align*}
+
+となるので \\
+
+\begin{align*}
+    \int_0^{\frac{\pi}{2}} (\sin{x} + \cos{x}) dy = \left[- \cos(x+y)\right]_{y = 0}^{y = \frac{\pi}{2}}
+    = (0 + 1)-(-1+0) ~=~ 2
+\end{align*}
+
+\begin{boxnote}
+    〜補足〜
+    \begin{center}
+        \\
+        \\
+        解説でわからなければ自分で調べるか、個別に聞いてください。
+    \end{center}
+\end{boxnote}
+
+\end{document}

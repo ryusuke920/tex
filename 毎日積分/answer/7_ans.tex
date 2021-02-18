@@ -1,0 +1,71 @@
+\documentclass[12pt,a4paper]{jsarticle}
+\usepackage {amsmath}
+\usepackage {amssymb}
+\usepackage {ascmac}
+\title{夏休み毎日積分~7日目(解答)}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{flushright}
+    \author{作成者:ryusuke.h}
+\end{flushright}
+
+\begin{itembox}{day 7 }
+    \begin{center}
+        次の定積分を求めよ。\\
+        ※今日はガウス積分です。
+    \end{center}
+\end{itembox}
+
+\begin{description}
+    \item [問1] {\displaystyle} \int_{-\infty}^{\infty} e^{-ax^2} dx \\
+\end{description}
+
+求める積分値をIとおく。
+
+\begin{align*}
+    I^2 &= \left(\int_{-\infty}^{\infty} e^{-x^2} dx\right)^2 
+    =  \int_{-\infty}^{\infty} e^{-x^2} dx \int_{-\infty}^{\infty} e^{-y^2} dy\\
+\end{align*}
+
+ここで x = r\cos\theta , y = r\sin\theta と置換すると，ヤコビアンは r なので，
+
+\begin{align*}
+    I^2 &= \int_0^{\infty} \int_0^2{\pi} e^{-ar^2} r d{\theta}dr 
+    = 2{\pi} \int_0^{\infty} e^{-ar^2} r dr \\
+    &= 2{\pi} \left[\frac{e^{-ar^2}}{-2a}\right]_0^{\infty} \\
+    &= \frac{\pi}{a}
+\end{align*}
+
+\begin{description}
+    \item [問2] {\displaystyle} \int_{-\infty}^{\infty} e^{-a(x-b)^2} dx
+\end{description}
+
+平行移動しても積分値は変わらない(x軸方向に+b平行移動)ので、グラフの形は不変であるので、
+
+\begin{align*}
+    \int_{-\infty}^{\infty} e^{-a(x-b)^2} dx = \frac{\pi}{a}
+\end{align*}
+
+\begin{description}
+    \item [問3] {\displaystyle} \int_0^{\infty} e^{-ax^2} dx
+\end{description}
+
+積分区間が問１の半分であるから、
+
+\begin{align*}
+    \int_0^{\infty} e^{-a(x-b)^2} dx = \frac{\pi}{2a}
+\end{align*}
+
+\begin{boxnote}
+    〜補足〜
+    \begin{center}
+        ガウス積分を行いました。\\
+        確率論では頻出なので覚えましょう。\\
+        解説でわからなければ自分で調べるか、個別に聞いてください。
+    \end{center}
+\end{boxnote}
+
+\end{document}

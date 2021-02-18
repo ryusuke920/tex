@@ -1,0 +1,338 @@
+\documentclass[12pt,a4paper]{jsarticle}
+\usepackage {amsmath}
+\usepackage {amssymb}
+\usepackage {ascmac}
+\title{確率論　宿題４の解答}
+\date{}
+
+\begin{document}
+
+\maketitle
+\begin{flushright}
+    \author{1019163 2-G 日置竜輔}
+\end{flushright}
+
+次の問題を解き，解答過程を示したレポートを提出しなさい．\\
+ただし，解答は単に答えを書くのではなく，どのように考えたかが分かるように書きなさい．
+
+\begin{description}
+    \item [問題] あるサイコロを n 回投げたとき，i の目が出る回数を Xi で表す．\\
+    このとき，以下の問いに答えよ．\\
+    但し、解答は単に答えを書くのではなく，どのように考えたかが分かるように書きなさい．
+\end{description}
+
+\begin{description}
+    \item [問1] サイコロの偶数の目が奇数の目より2倍でやすいサイコロのXi とXj の同時確率P(Xi, Xj)
+    が従う確率分布を求めよ．\\
+    ただし，奇数となるどの目が出る確率も等しく，偶数となるどの目が出る確率も等しいとする．
+\end{description}
+
+まず、「偶数の目が奇数の目より2倍でやすい」ので、サイコロを１回振ったら\\
+
+\left\{
+    {\displaystyle} \begin{array}{ll}
+        1,3,5の出る確率はそれぞれ & \frac{1}{9} \\
+        2,4,6の出る確率はそれぞれ & \frac{2}{9} ~~~~であることがわかる。\\
+    \end{array}
+\right
+
+~\\
+(a)i~,~jが共に奇数であるとき、\\
+さいころをn回振って、k回だけiが出る確率（すなわちX_{i} = k）は,\\
+
+\begin{align*}
+    {}_n C_k \left(\frac{1}{9}\right)^k\left(\frac{8}{9}\right)^{n-k}~~~~(反復試行の回数)\\
+\end{align*}
+
+また、サイコロをn回振って、k回だけiが出て、\\
+l回だけjが出る確率（すなわちX_{i}=k~,~X_{j}=lの同時確率）は、\\
+
+\begin{align*}
+    \frac{n!}{k!~l!~(n-k-l)!}\left(\frac{1}{9}\right)^k \left(\frac{1}{9}\right)^l \left(\frac{7}{9}\right)^{n-k-l}\\
+\end{align*}
+
+したがって、i~,~jが共に奇数のときの表は以下のようになる。
+
+\begin{table}[htb]
+    \centering
+    \caption{i,jが共に奇数のときの確率分布}
+        \begin{array}{|c|c|c|c|c|} \hline
+            (横:X_{i})/(縦:X_{j}) & 0 & 1 & 2 & \dots \\ \hline
+            0 & \left(\frac{7}{9}\right)^n & n\frac{7^{n-1}}{9^n} & \frac{n(n-1)}{2}\frac{7^{n-2}}{9^n} & \dots \\ \hline
+            1 & n\frac{7^{n-1}}{9^n} & n(n-1)\frac{7^{n-2}}{9^n} & \frac{n(n-1)(n-2)}{2}\frac{7^{n-3}}{9^n} & \dots \\ \hline
+            2 & \frac{n(n-1)}{2}\frac{7^{n-2}}{9^n} & \frac{n(n-1)(n-2)}{2}\frac{7^{n-3}}{9^n} & \frac{n(n-1)(n-2)(n-3)}{4}\frac{7^{n-5}}{9^n} & \dots \\ \hline
+            \dots & \dots & \dots & \dots & \dots \\ \hline
+            l & \frac{n!}{l!(n-l)!}\frac{7^{n-l}}{9^n} & \frac{n!}{l!~(n-l-1)!}\frac{7^{n-k-1}}{9^n} & \frac{n!}{2!~l!~(n-l-2)!}\frac{7^{n-l-2}}{9^n} & \dots \\ \hline
+            \dots & \dots & \dots & \dots & \dots \\ \hline
+    \end{array}
+\end{table}
+
+\begin{table}[htb]
+    \centering
+        \begin{array}{|c|c|c|c|} \hline
+            (横:X_{i})/(縦:X_{j}) & \dots & k & \dots \\ \hline
+            0 & \dots & \frac{n!}{k!(n-k)!}\frac{7^{n-k}}{9^n} & \dots \\ \hline
+            1 & \dots & \frac{n!}{k!~(n-k-1)!}\frac{7^{n-k-1}}{9^n} & \dots \\ \hline
+            2 & \dots & \frac{n!}{2!~k!~(n-k-2)!}\frac{7^{n-k-2}}{9^n} & \dots \\ \hline
+            \dots & \dots & \dots & \dots \\ \hline
+            l & \dots & \frac{n!}{k!~l!~(n-k-l)!}\frac{7^{n-k-l}}{9^n} & \dots \\ \hline
+            \dots & \dots & \dots & \dots \\ \hline
+    \end{array}
+\end{table}
+
+~\\
+(b)~iが奇数,~jが偶数であるとき、\\
+さいころをn回振って、k回だけiが出る確率（すなわちX_{i} = k）は,\\
+
+\begin{align*}
+    {}_n C_k \left(\frac{1}{9}\right)^k\left(\frac{8}{9}\right)^{n-k}~~~~(反復試行の回数)\\
+\end{align*}
+
+また、サイコロをn回振って、k回だけiが出て、\\
+l回だけjが出る確率（すなわちX_{i}=k~,~X_{j}=lの同時確率）は、\\
+
+\begin{align*}
+    \frac{n!}{k!~l!~(n-k-l)!}\left(\frac{1}{9}\right)^k \left(\frac{2}{9}\right)^l \left(\frac{2}{3}\right)^{n-k-l}\\
+\end{align*}
+
+したがって、~iが奇数,~jが偶数のときの表は以下のようになる。
+
+\begin{table}[htb]
+    \caption{~iが奇数,~jが偶数のときの確率分布}
+        \begin{array}{|c|c|c|c|} \hline
+            (横:X_{i})/(縦:X_{j}) & 0 & 1 & \dots \\ \hline
+            
+            0 & \left(\frac{2}{3}\right)^n & n\frac{1}{9}\left(\frac{2}{3}\right)^{n-1} &  \dots \\ \hline
+
+            1 & n\frac{2}{9}\left(\frac{2}{3}\right)^{n-1} & n(n-1)\frac{2}{81}\left(\frac{2}{3}\right)^{n-2} & \dots \\ \hline
+            
+            2 & \frac{n(n-1)(n-2)}{2}\left(\frac{2}{9}\right)^2 \left(\frac{2}{3}\right)^{n-1} & \frac{n(n-1)(n-2)}{2}\frac{4}{9^3}\left(\frac{2}{3}\right)^{n-3} & \dots \\ \hline
+            
+            \dots & \dots & \dots & \dots \\ \hline
+            
+            l & \frac{n!}{l!~(n-l)!}\left(\frac{2}{9}\right)^l\left(\frac{2}{3}\right)^{n-2} & \frac{n!}{l!~(n-l-1)!}\frac{2^l}{9^{l+1}}\left(\frac{2}{3}\right)^{n-l-1} & \dots \\ \hline
+            
+            \dots & \dots  & \dots & \dots \\ \hline
+    \end{array}
+\end{table}
+
+\begin{table}[htb]
+    \centering
+        \begin{array}{|c|c|c|c|c|} \hline
+            (横:X_{i})/(縦:X_{j}) & \dots & 2 & k & \dots \\ \hline
+
+            0 & \dots & \frac{n(n-1)}{2}\left(\frac{1}{9}\right)^2 \left(\frac{2}{3}\right)^{n-2} & \frac{n!}{k!~(n-k)!}\left(\frac{1}{9}\right)^k\left(\frac{2}{3}\right)^{n-k} & \dots \\ \hline
+            
+            1 & \dots & \frac{n(n-1)(n-2)}{2}\frac{2}{9^3}\left(\frac{2}{3}\right)^{n-3} & \frac{n!}{k!~(n-k-1)!}\frac{2}{9^{k+1}}\left(\frac{2}{3}\right)^{n-k-1} & \dots \\ \hline
+            
+            2 & \dots & \frac{n(n-1)(n-2)(n-3)}{4}\frac{4}{9^4}\left(\frac{2}{3}\right)^{n-4} & \frac{n!}{2!~k!~(n-k-2)!}\frac{4}{9^{k+2}}\left(\frac{2}{3}\right)^{n-k-2} & \dots \\ \hline
+            
+            \dots & \dots & \dots & \dots & \dots \\ \hline
+            
+            l & \dots & \frac{n!}{l!~(n-l-2)!}\frac{2^l}{9^{l+2}}\left(\frac{2}{3}\right)^{n-l-2} & \frac{n!}{k!~l!~(n-k-l)!}\frac{2^l}{9^{k+l}}\left(\frac{2}{3}\right)^{n-k-l} & \dots \\ \hline
+            
+            \dots & \dots & \dots & \dots & \dots \\ \hline
+    \end{array}
+\end{table}
+
+
+~\\
+(c)~iが偶数,~jが奇数であるとき、\\
+さいころをn回振って、k回だけiが出る確率（すなわちX_{i} = k）は,\\
+
+\begin{align*}
+    {}_n C_k \left(\frac{2}{9}\right)^k\left(\frac{7}{9}\right)^{n-k}~~~~(反復試行の回数)\\
+\end{align*}
+
+また、サイコロをn回振って、k回だけiが出て、\\
+l回だけjが出る確率（すなわちX_{i}=k~,~X_{j}=lの同時確率）は、\\
+
+\begin{align*}
+    \frac{n!}{k!~l!~(n-k-l)!}\left(\frac{2}{9}\right)^k \left(\frac{1}{9}\right)^l \left(\frac{2}{3}\right)^{n-k-l}\\
+\end{align*}
+
+したがって、~iが偶数,~jが奇数のときの表は以下のようになる。
+
+\begin{table}[htb]
+    \caption{~iが偶数,~jが奇数のときの確率分布}
+        \begin{array}{|c|c|c|c|} \hline
+            (横:X_{i})/(縦:X_{j}) & 0 & 1 & \dots \\ \hline
+
+            0 & \left(\frac{2}{3}\right)^n & \frac{n!}{(n-1)!}\frac{2}{9}\left(\frac{2}{3}\right)^{n-1} & \dots \\ \hline
+
+            1 & n\frac{1}{9}\left(\frac{2}{3}\right)^{n-1} & n(n-1)\frac{2}{81}\left(\frac{2}{3}\right)^{n-2} & \dots \\ \hline
+            
+            2 & \frac{n(n-1)}{2} \left(\frac{1}{9}\right)^2\left(\frac{2}{3}\right)^{n-2} & \frac{n(n-1)(n-2)}{2}\frac{2}{9^3}\left(\frac{2}{3}\right)^{n-3} & \dots \\ \hline
+            
+            \dots & \dots & \dots & \dots \\ \hline
+            
+            l & \frac{n!}{(n-l)!} \left(\frac{1}{9}\right)^l\left(\frac{2}{3}\right)^{n-l} & \frac{n!}{l!~(n-l-1)!}\frac{2}{9^{l+1}}\left(\frac{2}{3}\right)^{n-l-1} & \dots \\ \hline
+            
+    \end{array}
+\end{table}
+
+
+\begin{table}[htb]
+    \centering
+        \begin{array}{|c|c|c|c|c|} \hline
+            (横:X_{i})/(縦:X_{j}) & \dots & 2 & k & \dots \\ \hline
+            
+            0 & \dots & \frac{n(n-1)}{2}\frac{4}{81}\left(\frac{2}{3}\right)^{n-2} & \frac{n!}{k!~(n-k)!}\left(\frac{2}{3}\right)^{n-k} & \dots \\ \hline
+
+            1 & \dots & \frac{n(n-1)(n-2)}{2}\frac{4}{9^3}\left(\frac{2}{3}\right)^{n-3} & \frac{n!}{k!~(n-k-1)!}\frac{2^k}{9^{k+1}}\left(\frac{2}{3}\right)^{n-k-1} & \dots \\ \hline
+            
+            2 & \dots & \frac{n(n-1)(n-2)(n-3)}{4}\frac{4}{9^4}\left(\frac{2}{3}\right)^{n-4} & \frac{n!}{2!~k!~(n-k-2)!}\frac{2^k}{9^{k+2}}\left(\frac{2}{3}\right)^{n-k-2} & \dots \\ \hline
+            
+            \dots & \dots & \dots & \dots & \dots \\ \hline
+            
+            l & \dots & \frac{n!}{2!~l!~(n-l-2)!}\frac{4}{9^{l+2}}\left(\frac{2}{3}\right)^{n-l-2}  & \frac{n!}{k!~l!~(n-k-l)!}\frac{2^k}{9^{k+l}}\left(\frac{2}{3}\right)^{n-k-l} & \dots \\ \hline
+            
+            \dots & \dots & \dots & \dots & \dots \\ \hline
+    \end{array}
+\end{table}
+
+
+~\\
+(d)~i~,jが共に偶数であるとき、\\
+さいころをn回振って、k回だけiが出る確率（すなわちX_{i} = k）は,\\
+
+\begin{align*}
+    {}_n C_k \left(\frac{2}{9}\right)^k\left(\frac{7}{9}\right)^{n-k}~~~~(反復試行の回数)\\
+\end{align*}
+
+また、サイコロをn回振って、k回だけiが出て、\\
+l回だけjが出る確率（すなわちX_{i}=k~,~X_{j}=lの同時確率）は、\\
+
+\begin{align*}
+    \frac{n!}{k!~l!~(n-k-l)!}\left(\frac{2}{9}\right)^k \left(\frac{2}{9}\right)^l \left(\frac{5}{9}\right)^{n-k-l}\\
+\end{align*}
+
+したがって、~i,~jが共に偶数のときの表は以下のようになる。
+
+\begin{table}[htb]
+    \caption{~i,~jが共に偶数のときの確率分布}
+        \begin{array}{|c|c|c|c|} \hline
+            (横:X_{i})(縦:X_{j}) & 1 & 2 & \dots \\ \hline
+            
+            1 & n(n-1)4\frac{{5^{n-2}}}{9^n} & \frac{n(n-1)(n-2)}{2}8\frac{{5^{n-3}}}{9^n} & \dots \\ \hline
+            
+            2 &  \frac{n(n-1)(n-2)}{2}8\frac{{5^{n-3}}}{9^n} & \frac{n(n-1)(n-2)(n-3)}{4}16\frac{{5^{n-4}}}{9^n} & \dots \\ \hline
+            
+            \dots & \dots & \dots & \dots \\ \hline
+            
+            l &\frac{n!}{l!~(n-l-1)!}2^{l+1}\frac{{5^{n-l-1}}}{9^n} & \frac{n!}{2!~l!~(n-l-2)!}2^{l+2}\frac{5^{n-l-2}}{9^n} & \dots \\ \hline
+            
+    \end{array}
+\end{table}
+
+\begin{table}[htb]
+    \centering
+        \begin{array}{|c|c|c|c|} \hline
+            (横:X_{i})(縦:X_{j}) & \dots & k & \dots \\ \hline
+            
+            1 & \dots &  \frac{n!}{k!~(n-k-1)!}2^{k+1}\frac{{5^{n-k-1}}}{9^n} & \dots \\ \hline
+            
+            2 & \dots & \frac{n!}{2!~k!~(n-k-2)!}2^{k+2}\frac{5^{n-k-2}}{9^n} & \dots \\ \hline
+            
+            \dots & \dots & \dots & \dots \\ \hline
+            
+            l & \dots & \frac{n!}{k!~l!~(n-k-l)!}2^{k+l}\frac{5^{n-k-l}}{9^n} & \dots \\ \hline
+            
+            \dots & \dots & \dots & \dots \\ \hline
+    \end{array}
+\end{table}
+
+\begin{description}
+    \item [問2] 問 1 の同時確率分布から Xi の周辺確率分布を求めよ．
+\end{description}
+
+X_{i}の確率分布はjの出る回数によらずに全ての場合での和を求めれば良い。\\
+したがって、問1の結果より、i ~=~ k回、すなわちX_{i}~=~kの時の周辺確率分布は、\\
+
+~\\
+(a)i~,~jが共に奇数であるとき、\\
+\begin{align*}
+    & \sum^n_{l = 0} \frac{n!}{k!~l!~(n-k-l)!} \left(\frac{1}{9}\right)^k \left(\frac{1}{9}\right)^l \left(\frac{7}{9}\right)^{n-k-l} \\
+    &= \sum^n_{l = 0} \frac{n!(n-k)!}{k!~l!~(n-k-l)!(n-k)!} \left(\frac{1}{9}\right)^k \left(\frac{1}{9}\right)^l \left(\frac{7}{9}\right)^{n-k-l} \\
+    &= \frac{n!}{k!(n-k)!}\left(\frac{1}{9}\right)^k \sum^n_{l = 0}\frac{(n-k)!}{l!(n-k-l)!}\left(\frac{1}{9}\right)^l\left(\frac{7}{9}\right)^{n-k-l} \\
+    &= {}_n C_k \left(\frac{1}{9}\right)^k \sum^n_{l = 0} {}_{n-k} C_l \left(\frac{1}{9}\right)^l\left(\frac{7}{9}\right)^{n-k-l} \\
+    &= {}_n C_k \left(\frac{1}{9}\right)^k \left(\frac{1}{9}~+~\frac{7}{9}\right)^{n-k} \\
+    &= {}_n C_k \left(\frac{1}{9}\right)^k \left(\frac{8}{9}\right)^{n-k}
+\end{align*}
+
+~\\
+(b)i~が奇数~,~jが偶数であるとき、\\
+\begin{align*}
+    & \sum^n_{l = 0} \frac{n!}{k!~l!~(n-k-l)!} \left(\frac{1}{9}\right)^k \left(\frac{2}{9}\right)^l \left(\frac{2}{3}\right)^{n-k-l} \\
+    &= \sum^n_{l = 0} \frac{n!(n-k)!}{k!~l!~(n-k-l)!(n-k)!} \left(\frac{1}{9}\right)^k \left(\frac{2}{9}\right)^l \left(\frac{2}{3}\right)^{n-k-l} \\
+    &= \frac{n!}{k!(n-k)!}\left(\frac{1}{9}\right)^k \sum^n_{l = 0}\frac{(n-k)!}{l!(n-k-l)!}\left(\frac{1}{9}\right)^l\left(\frac{2}{3}\right)^{n-k-l} \\
+    &= {}_n C_k \left(\frac{1}{9}\right)^k \sum^n_{l = 0} {}_{n-k} C_l \left(\frac{2}{9}\right)^l\left(\frac{2}{3}\right)^{n-k-l} \\
+    &= {}_n C_k \left(\frac{1}{9}\right)^k \left(\frac{2}{9}~+~\frac{2}{3}\right)^{n-k} \\
+    &= {}_n C_k \left(\frac{1}{9}\right)^k \left(\frac{8}{9}\right)^{n-k}
+\end{align*}
+
+~\\
+(c)i~が偶数~,~jが奇数であるとき、\\
+\begin{align*}
+    & \sum^n_{l = 0} \frac{n!}{k!~l!~(n-k-l)!} \left(\frac{2}{9}\right)^k \left(\frac{1}{9}\right)^l \left(\frac{2}{3}\right)^{n-k-l} \\
+    &= \sum^n_{l = 0} \frac{n!(n-k)!}{k!~l!~(n-k-l)!(n-k)!} \left(\frac{2}{9}\right)^k \left(\frac{1}{9}\right)^l \left(\frac{2}{3}\right)^{n-k-l} \\
+    &= \frac{n!}{k!(n-k)!}\left(\frac{2}{9}\right)^k \sum^n_{l = 0}\frac{(n-k)!}{l!(n-k-l)!}\left(\frac{1}{9}\right)^l\left(\frac{2}{3}\right)^{n-k-l} \\
+    &= {}_n C_k \left(\frac{2}{9}\right)^k \sum^n_{l = 0} {}_{n-k} C_l \left(\frac{1}{9}\right)^l\left(\frac{2}{3}\right)^{n-k-l} \\
+    &= {}_n C_k \left(\frac{2}{9}\right)^k \left(\frac{1}{9}~+~\frac{2}{3}\right)^{n-k} \\
+    &= {}_n C_k \left(\frac{2}{9}\right)^k \left(\frac{7}{9}\right)^{n-k}
+\end{align*}
+
+~\\
+(d)i~,~jが共に偶数であるとき、\\
+\begin{align*}
+    & \sum^n_{l = 0} \frac{n!}{k!~l!~(n-k-l)!} \left(\frac{2}{9}\right)^k \left(\frac{2}{9}\right)^l \left(\frac{5}{9}\right)^{n-k-l} \\
+    &= \sum^n_{l = 0} \frac{n!(n-k)!}{k!~l!~(n-k-l)!(n-k)!} \left(\frac{2}{9}\right)^k \left(\frac{2}{9}\right)^l \left(\frac{5}{9}\right)^{n-k-l} \\
+    &= \frac{n!}{k!(n-k)!}\left(\frac{2}{9}\right)^k \sum^n_{l = 0}\frac{(n-k)!}{l!(n-k-l)!}\left(\frac{2}{9}\right)^l\left(\frac{5}{9}\right)^{n-k-l} \\
+    &= {}_n C_k \left(\frac{2}{9}\right)^k \sum^n_{l = 0} {}_{n-k} C_l \left(\frac{2}{9}\right)^l\left(\frac{5}{9}\right)^{n-k-l} \\
+    &= {}_n C_k \left(\frac{2}{9}\right)^k \left(\frac{2}{9}~+~\frac{5}{9}\right)^{n-k} \\
+    &= {}_n C_k \left(\frac{2}{9}\right)^k \left(\frac{7}{9}\right)^{n-k}\\
+\end{align*}
+
+
+\begin{description}
+    \item [問3] n が十分大きな値のとき，問 2 の周辺確率分布が収束する確率分布を求めよ．
+\end{description}
+
+{\displaystyle}nが十分大きな値をとる時、問２の周辺確率分布は正規分布に近似するため、正規分布の公式に当てはめる。\\
+\mu  = \frac{n}{9}~,~\sigma^2 = np(1-p) =\frac{8}{81}nであるから、正規分布は\\
+
+\begin{align*}
+    {\displaystyle}f(l)~&=~\frac{1}{\sqrt{2{\pi}{\sigma}^2}}\exp\left\{-\frac{(x ~-~ \mu)^2}{2\sigma^2}\right\} \\
+    &= \frac{1}{\sqrt{2{\pi}\frac{8}{81}n}}\exp\left\{-\frac{(x-\frac{n}{9})^2}{2\frac{8}{81}n}\right\} \\
+    &= \frac{9}{4\sqrt{n{\pi}}} \exp \left\{\frac{81}{16n}\left(x-\frac{n}{9}\right)^2\right\}
+\end{align*}
+
+したがって、求める確率分布は
+
+\begin{align*}
+    f(l) ~=~ \frac{9}{4\sqrt{n{\pi}}} \exp \left\{\frac{81}{16n}\left(x-\frac{n}{9}\right)^2\right\}\\
+\end{align*}
+
+
+\begin{description}
+    \item [問4] n = 25920000, X3 = 2877000であったとき，このサイコロが，偶数の目が奇数の目より2倍
+    以上でやすいサイコロであるかどうかを，有意水準 5{\%}で検定せよ．\\
+    ただし，n = 25920000は十分大きな値であると見做し，問３の確率分布に収束していると見做してよい．\\
+    さらに，奇数となるどの目が出る確率も等しく，偶数となるどの目が出る確率も等しいとする．
+\end{description}
+
+このサイコロが、普通のサイコロ(1~〜~6が等確率で出る)と仮定すると、\\
+X_{3}の確率分布は、nが十分大きいならば、\\
+
+\begin{align*}
+    &P_{(x,n)} ~=~ \frac{6}{\sqrt{10n{\pi}}} \exp\left\{ -\frac{8}{15n}\left(x - \frac{n}{6}\right)^2  \right\}に収束する。\\
+    &したがって、n ~=~ 2,592,0000~より、\frac{n}{6} ~=~ 4,320,000 \\
+    &P_{(x)} ~=~ \frac{1}{1200\sqrt{5\pi}}\exp\left\{ -\frac{1}{7.2~×~10^6}\left(x-4.32×10^6\right)^2 \right\} となる。\\
+    &また、\sigma ~=~ 600\sqrt{10} ~=~ 1897.3\dots ~~,~~ 2\sigma ~=~ 3794.7\dots \\
+    &\frac{n}{6}-20 ~=~ 4,316,205.2\dots ~~,~~ \frac{n}{6}+20 ~=~ 4,323,794.7\dots である。\\
+\end{align*}
+
+以上より、~~4,316,205~\leqq~X_{3}~\leqq~4,323,795となる確率が~95.4~\%~以上なので、\\
+このサイコロは偶数の目が奇数の目より2倍以上でやすいサイコロである可能性が高い。\\
+
+\end{document}

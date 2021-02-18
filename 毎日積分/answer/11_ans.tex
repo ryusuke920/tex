@@ -1,0 +1,61 @@
+\documentclass[12pt,a4paper,dvipdfmx]{jsarticle}
+
+\usepackage {amsmath}
+\usepackage {amssymb}
+\usepackage {ascmac}
+\usepackage {tikz}
+\usetikzlibrary{intersections, calc, arrows}
+
+\title{夏休み毎日積分~11日目(解答)}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{flushright}
+    \author{作成者:ryusuke.h}
+\end{flushright}
+
+\begin{itembox}{day 11 }
+    \begin{center}
+        次の定積分を求めよ。\\
+        今日も今日とて重積分の問題です。\\
+        飽きてきたと思うので、明日は変わった問題を出題してみます。
+    \end{center}
+\end{itembox}
+
+\begin{description}
+    \item [問1] {\displaystyle} \int_0^\infty \frac{1}{e^x + e^{-x}} ~dx~ \\
+\end{description}
+
+e^x ~=~ t~とおいて解いていく。
+
+\begin{align*}
+    \int \frac{1}{e^x+e^{-x}} dx &= \int \frac{e^x}{e^{2x}+1}dx ~=~ \frac{1}{1+t^2}dt 
+    ~=~ \arctan{t} であるから、
+\end{align*}
+
+\begin{align*}
+    (与式) ~=~  \left[\arctan{t}\right]_1^{\infty} ~=~ \frac{\pi}{2} ~-~ \frac{\pi}{4} ~=~ \frac{\pi}{4}
+\end{align*}
+
+\begin{description}
+    \item [問2] {\displaystyle} \iint_D \frac{1}{1+x+y+xy} ~ dxdy ~~~~ D = \{(x,y) ~|~ 1 \leqq x \leqq 4,~ 2 \leqq y \leqq 3\}
+\end{description}
+
+\begin{align*}
+    (与式) &= \int_1^4 dx \int_2^3 \frac{1}{(1+x)(1+y)}dy ~=~ \int_1^4dx \left[\frac{\log(1+y)}{1+x}\right]_{y = 2}^{y = 3} \\
+    &= \int_1^4 \frac{\log{4} - \log{3}}{1+x}dx = \left[\left( \log{4}-\log{3} \right)\log\left(1+x\right)\right]_1^4 \\
+    &= \left(\log{4}-\log{3}\right)\left(\log{5}-\log{2}\right)
+\end{align*}
+
+\begin{boxnote}
+    〜補足〜
+    \begin{center}
+        1問目はe^xをかけることで、きれいな形になります。\\
+        ２問目は因数分解するということが見抜ければ、一発です。\\
+        解説でわからなければ自分で調べるか、個別に聞いてください。
+    \end{center}
+\end{boxnote}
+
+\end{document}
