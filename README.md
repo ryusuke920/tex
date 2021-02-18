@@ -5,6 +5,8 @@ TeXのテンプレートや成果物を載せています
 2年後期の必修科目である微分方程式の講義後に習った内容を忘れないよう自作問題を作成し、春休みに毎日解くための問題です  
 （基本的には）だんだん難易度が上がっていくように作成してあります
 
+### 内容
+
 1. 超基本となる微分方程式の一般解と特殊解 
 &ensp; [問題](https://github.com/ryusuke920/tex/blob/main/%E6%AF%8E%E6%97%A5%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F/problem/day_1.pdf)
 &ensp; [解答](https://github.com/ryusuke920/tex/blob/main/%E6%AF%8E%E6%97%A5%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F/answer/day_1.pdf)
@@ -50,6 +52,7 @@ TeXのテンプレートや成果物を載せています
 （基本的には）だんだん難易度が上がっていくように作成してあります
 
 ### 内容
+
 1. 積分の超基本公式の確認
 &ensp; [問題](https://github.com/ryusuke920/tex/blob/main/%E6%AF%8E%E6%97%A5%E7%A9%8D%E5%88%86/problem/day_1.pdf)
 &ensp; [解答](https://github.com/ryusuke920/tex/blob/main/%E6%AF%8E%E6%97%A5%E7%A9%8D%E5%88%86/answer/day_1.pdf)
