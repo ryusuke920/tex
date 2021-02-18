@@ -1,0 +1,102 @@
+\documentclass[dvipdfmx,uplatex]{jsarticle}
+\def\vector#1{\mbox{\boldmath $#1$}}
+\usepackage{qexam} % 問題を書く時とかに必要なやつ
+\usepackage{setspace} % 行間開けるのに必要なやつ
+\usepackage{amsmath} % 数学やるのに必要なやつ
+\usepackage{bm} % 太字にするのに必要なやつ
+\usepackage{cases} % 連立方程式を書くのに必要なやつ
+\usepackage{amssymb}
+\usepackage[hiresbb]{graphicx}
+\usepackage{ascmac}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{braket}
+\usepackage[colorlinks=true, bookmarks=true,
+bookmarksnumbered = true, bookmarkstype = toc, linkcolor = blue,
+urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[version=3]{mhchem}
+\makeatletter
+ \renewcommand{\theequation}{
+   \thesubsection.\arabic{equation}}
+  \@addtoreset{equation}{subsection}
+\title{春休み毎日微分方程式 Day 10（解答）}
+\author{公立はこだて未来大学　システム情報科学部　B2　日置竜輔}
+\date{\today}
+
+\begin{document}
+\begin{spacing}{1.6}
+\maketitle
+
+\question{問1}
+以下の連立微分方程式を解け。\\
+\begin{qparts}
+  \qpart
+  \begin{equation*}
+    \frac{dy}{dx} + 3y = e ^ x
+  \end{equation*}
+
+  \subsection*{解答}
+
+  微分方程式を演算子法を用いて表すと、
+  \begin{equation*}
+    Dy + 3y = (D + 3)y = e ^ x
+  \end{equation*}
+  となるので、
+  \begin{equation*}
+    y = \frac{1}{D + 3}e ^ x
+  \end{equation*}
+  になるので、
+  \begin{eqnarray*}
+    \frac{1}{D + 3}e ^ x & = & e ^ {-3x} \int e ^ {3x} e ^ x dx \\
+    & = & e ^ {-3x} \int e ^ {3x} e ^ x dx \\
+    & = & e ^ {-3x} \int e ^ {4x} dx \\
+    & = & e ^ {-3x} \frac{1}{4}e ^ {4x} \\
+    & = & \frac{1}{4}e ^ x + C \qquad (Cは任意定数)
+  \end{eqnarray*}
+  となる。
+
+  \newpage
+
+  \qpart
+  \begin{equation*}
+    \frac{d^2y}{dx^2} - 7 \frac{dy}{dx} + 12y = 3x
+  \end{equation*}
+
+  \subsection*{解答}
+
+  微分方程式を演算子法を用いて表すと、
+  \begin{eqnarray*}
+    D ^ 2y - 7Dy + 12y & = & (D ^ 2 - 7D + 12)y \\
+    & = & (D - 3)(D - 4)y \\
+    & = & 3x \\
+    \Leftrightarrow
+    y & = & \frac{1}{(D - 3)(D - 4)}3x
+   \end{eqnarray*}
+   となる。\\
+
+   よって、
+   \begin{eqnarray*}
+     \frac{1}{(D - 3)(D - 4)}3x & = & \frac{1}{D - 3} \left(\frac{1}{D - 4}3x\right) \\
+     & = & \frac{1}{D - 3}e ^ {-(-4)x}\left(\int e ^ {-4x}3xdx\right) \\
+     & = & \frac{1}{D - 3}e ^ {4x} \left(-\frac{1}{4}e ^ {-4x}3x - \frac{3}{16}e ^ {-4x}\right) \\
+     & = & \frac{1}{D - 3} \left(-\frac{1}{16}e ^ {4x}e ^ {-4x} (12x + 3)\right) \\
+     & = & -\frac{3}{16} \frac{1}{D + 3}(4x + 1) \\
+     & = & -\frac{3}{16} e ^{-(-3)x} \left(\int e ^ {-3x}(4x + 1) dx \right) \\
+     & = & -\frac{3}{16}e ^ {3x} \left(-\frac{1}{3}e ^ {-3x}(4x + 1) - \frac{1}{9}e ^ {-3x} 4 \right) \\
+     & = & \frac{3}{16} \frac{1}{9}e ^ {-3x}e ^ {-3x}(12x + 7) \\
+     & = & \frac{1}{48}(12x + 7) \\
+     & = & \frac{1}{4}x + \frac{7}{48}
+   \end{eqnarray*}
+   となるので、一般解は
+   \begin{equation*}
+     y = \frac{1}{4}x + \frac{7}{48}
+   \end{equation*}
+  \end{qparts}
+  \end{spacing}
+  \begin{shadebox}
+    後期の授業では$D$を用いた方程式を解く際には分母を部分分数分解すると習いましたが、解説のように１つ１つ処理して行っても答えを求めることができるので覚えておきましょう。
+  \end{shadebox}
+\end{document}
