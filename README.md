@@ -49,6 +49,15 @@ TeXのテンプレートや成果物を載せています
 2年前期の必修科目である確率論, システム数学基礎の講義後に習った内容を忘れないよう自作問題を作成し、夏休みに毎日解くための問題です  
 （基本的には）だんだん難易度が上がっていくように作成してあります
 
+### 内容
+1. 積分の超基本公式の確認
+&ensp; [問題](https://github.com/ryusuke920/tex/blob/main/%E6%AF%8E%E6%97%A5%E7%A9%8D%E5%88%86/problem/day_1.pdf)
+&ensp; [解答](https://github.com/ryusuke920/tex/blob/main/%E6%AF%8E%E6%97%A5%E7%A9%8D%E5%88%86/answer/day_1.pdf)
+
+2. 和積・積和の公式を用いた積分
+&ensp; [問題](https://github.com/ryusuke920/tex/blob/main/%E6%AF%8E%E6%97%A5%E7%A9%8D%E5%88%86/problem/day_2.pdf)
+&ensp; [解答](https://github.com/ryusuke920/tex/blob/main/%E6%AF%8E%E6%97%A5%E7%A9%8D%E5%88%86/answer/day_2.pdf)
+
 ## 確率論レポート
 2年前期の必修科目である確率論の講義後の最終課題が時間があったためTeXで作成した時のものです
 
