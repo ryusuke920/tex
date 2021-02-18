@@ -1,0 +1,371 @@
+\documentclass[dvipdfmx,uplatex]{jsarticle}
+\def\vector#1{\mbox{\boldmath $#1$}}
+\usepackage{qexam} % 問題を書く時とかに必要なやつ
+\usepackage{setspace} % 行間開けるのに必要なやつ
+\usepackage{amsmath} % 数学やるのに必要なやつ
+\usepackage{bm} % 太字にするのに必要なやつ
+\usepackage{cases} % 連立方程式を書くのに必要なやつ
+\usepackage{amssymb}
+\usepackage[hiresbb]{graphicx}
+\usepackage{ascmac}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{braket}
+\usepackage[colorlinks=true, bookmarks=true,
+bookmarksnumbered = true, bookmarkstype = toc, linkcolor = blue,
+urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[version=3]{mhchem}
+\makeatletter
+ \renewcommand{\theequation}{
+   \thesubsection.\arabic{equation}}
+  \@addtoreset{equation}{subsection}
+\title{春休み毎日微分方程式 Day 9（解答）}
+\author{公立はこだて未来大学　システム情報科学部　B2　日置竜輔}
+\date{\today}
+
+\begin{document}
+\begin{spacing}{1.6}
+\maketitle
+
+\question{問1}
+以下の連立微分方程式を解け。
+\begin{qparts}
+  \qpart
+  \begin{numcases}
+    {}
+    \frac{dy}{dt} = 8x + 2y \nonumber \\
+    \frac{dx}{dt} = -6x + y \nonumber
+  \end{numcases}
+
+  \subsection*{解答}
+
+  この問題は行列を用いると、
+  \[
+  \frac{d}{dt}
+  \left(
+  \begin{array}{ccc}
+    x \\
+    y
+  \end{array}
+  \right)
+  = \left(
+    \begin{array}{ccc}
+      8 & 2 \\
+      -6 & 1 \\
+    \end{array}
+  \right)
+  \left(
+  \begin{array}{ccc}
+    x \\
+    y
+  \end{array}
+  \right)
+  \]
+  と表すことができるので、
+  \begin{equation*}
+    A = \left(
+        \begin{array}{ccc}
+          8 & 2 \\
+          -6 & 1
+        \end{array}
+      \right)
+  \end{equation*}
+  とおくと、
+  \[
+  \frac{d}{dt}
+  \left(
+  \begin{array}{ccc}
+    x \\
+    y
+  \end{array}
+  \right)
+  = A
+  \left(
+  \begin{array}{ccc}
+    x \\
+    y
+  \end{array}
+  \right)
+  \]
+  となる。この$A$について、固有値を求めると、
+  \begin{eqnarray*}
+    |A - \lambda I| & = & \left|
+        \begin{array}{ccc}
+          8 - \lambda & 2 \\
+          -6 & 1 - \lambda
+        \end{array}
+      \right| \\
+       & = & (\lambda - 1)(\lambda - 8) + 12 \\
+       & = & \lambda ^ 2 - 9 \lambda + 20 \\
+       & = & (\lambda - 4)(\lambda - 5) \\
+       & = & 0
+  \end{eqnarray*}
+  となるので、
+  \begin{equation*}
+    \lambda = 4, 5
+  \end{equation*}
+  となる。次に、対応する固有値ごとに固有ベクトルを求める。\\
+
+  \subsubsection*{(ⅰ) $ \lambda = 4 $ の時、}
+
+  \begin{eqnarray*}
+    A - 4I & = &
+    \left(
+    \begin{array}{ccc}
+      4 & 2 \\
+      -6 & -3
+    \end{array}
+    \right)
+    \rightarrow
+    \left(
+    \begin{array}{ccc}
+      4 & 2 \\
+      2 & 1
+    \end{array}
+    \right)
+    \rightarrow
+    \left(
+    \begin{array}{ccc}
+      2 & 1 \\
+      0 & 0
+    \end{array}
+    \right)
+  \end{eqnarray*}
+  となる。この時、
+  \begin{eqnarray*}
+    (A - 4I) \left(
+    \begin{array}{ccc}
+      x \\
+      y
+    \end{array}
+    \right)
+    & = & 0 \\
+    \Leftrightarrow
+    2x + y & = & 0
+  \end{eqnarray*}
+  が得られ、この方程式の解は任意定数$k$を用いて、
+  \begin{equation*}
+    \left(
+    \begin{array}{ccc}
+      x \\
+      y
+    \end{array}
+    \right)
+    = k
+    \left(
+    \begin{array}{ccc}
+      1 \\
+      -2
+    \end{array}
+    \right)
+  \end{equation*}
+  と表すことができるので、固有値ベクトル$\overrightarrow{p_1}$は、
+  \begin{equation}
+    \overrightarrow{p_1} =
+    \left(
+    \begin{array}{ccc}
+      1 \\
+      -2
+    \end{array}
+    \right)
+  \end{equation}
+  となる。\\
+
+  同様に、固有値ベクトルをもう１つ求める。
+
+  \subsubsection*{(ⅱ) $ \lambda = 5 $ の時、}
+
+  \begin{eqnarray*}
+    A - 5I & = &
+    \left(
+    \begin{array}{ccc}
+      3 & 2 \\
+      -6 & -4
+    \end{array}
+    \right)
+    \rightarrow
+    \left(
+    \begin{array}{ccc}
+      3 & 2 \\
+      3 & 2
+    \end{array}
+    \right)
+    \rightarrow
+    \left(
+    \begin{array}{ccc}
+      3 & 2 \\
+      0 & 0
+    \end{array}
+    \right)
+  \end{eqnarray*}
+  となる。この時、
+  \begin{eqnarray*}
+    (A - 5I) \left(
+    \begin{array}{ccc}
+      x \\
+      y
+    \end{array}
+    \right)
+    & = & 0 \\
+    \Leftrightarrow
+    3x + 2y & = & 0
+  \end{eqnarray*}
+  が得られ、この方程式の解は任意定数$k$を用いて、
+  \begin{equation*}
+    \left(
+    \begin{array}{ccc}
+      x \\
+      y
+    \end{array}
+    \right)
+    = k
+    \left(
+    \begin{array}{ccc}
+      2 \\
+      -3
+    \end{array}
+    \right)
+  \end{equation*}
+  と表すことができるので、固有値ベクトル$\overrightarrow{p_2}$は、
+  \begin{equation}
+    \overrightarrow{p_2} =
+    \left(
+    \begin{array}{ccc}
+      2 \\
+      -3
+    \end{array}
+    \right)
+  \end{equation}
+  となる。
+
+  \newpage
+
+  したがって、(0.0.1),(0.0.2)より、行列$P$を
+  \begin{equation*}
+    P = (\overrightarrow{p_1} \quad \overrightarrow{p_2}) =
+    \left(
+    \begin{array}{ccc}
+      1 & 2 \\
+      -2 & -3
+    \end{array}
+    \right)
+  \end{equation*}
+  とすることができ、
+  \begin{equation}
+    P^{-1}AP =
+    \left(
+    \begin{array}{ccc}
+      4 & 0 \\
+      0 & 5
+    \end{array}
+    \right)
+    = D
+  \end{equation}
+  と対角化することができる。\\\\
+
+  次に $ P^{-1}AP $ つまり、 $ A = PDP^{-1} $より、
+  \begin{equation*}
+    \frac{d \overrightarrow{x}}{dt} = PDP^{-1} \overrightarrow x
+  \end{equation*}
+  と変形できる。さらに、$ P^{-1} $ を左辺に掛けることにより、
+  \begin{equation*}
+    P^{-1}\frac{d \overrightarrow{x}}{dt} = P^{-1}PDP^{-1}\overrightarrow x
+  \end{equation*}
+  となる。ここで、$P^{-1}$は定数なので、
+  \begin{equation*}
+    \frac{d}{dt}P^{-1}\overrightarrow x = DP^{-1}\overrightarrow x
+  \end{equation*}
+  と変形でき、さらに$\overrightarrow y = P^{-1}\overrightarrow x$とおくことで、
+  \begin{eqnarray*}
+    \frac{d}{dt}\overrightarrow y & = & D \overrightarrow y \\
+  \end{eqnarray*}
+  \newpage
+
+  同様に、
+  \begin{eqnarray*}
+    \frac{d}{dt}\overrightarrow x & = & D \overrightarrow x \\
+    \frac{d}{dt}
+    \left(
+    \begin{array}{ccc}
+    X \\
+    Y
+    \end{array}
+    \right)
+    & = &
+    \left(
+    \begin{array}{ccc}
+    4 & 0 \\
+    0 & 5
+    \end{array}
+    \right)
+    \left(
+    \begin{array}{ccc}
+    X \\
+    Y
+    \end{array}
+    \right)
+  \end{eqnarray*}
+  と変形できる。\\\\
+  したがって、任意定数$C_1, C_2$を用いて、
+  \begin{eqnarray*}
+    \frac{dX}{dt} = k_1X & \Rightarrow & X  = C_1e ^{4t}\\
+    \frac{dY}{dt} = k_2X & \Rightarrow & Y  = C_2e ^{5t}
+  \end{eqnarray*}
+  と変形できる。{\bf (変数分離系を用いて式変形をする。)}\\
+  また、$\overrightarrow y = P^{-1} \overrightarrow x$つまり、$\overrightarrow x = P \overrightarrow y$なので、
+  \begin{eqnarray*}
+    \overrightarrow x & = & P \overrightarrow y \\
+    & = &
+    \left(
+    \begin{array}{ccc}
+    1 & 2 \\
+    -2 & -3
+    \end{array}
+    \right)
+    \left(
+    \begin{array}{ccc}
+    X \\
+    Y
+    \end{array}
+    \right) \\
+    & = &
+    \left(
+    \begin{array}{ccc}
+    1 & 2 \\
+    -2 & -3
+    \end{array}
+    \right)
+    \left(
+    \begin{array}{ccc}
+    C_1 e ^ {4t} \\
+    C_2 e ^ {5t}
+    \end{array}
+    \right) \\
+    & = &
+    \left(
+    \begin{array}{ccc}
+    C_1 e ^ {4t} + 2 C_2 e ^ {5t} \\
+    -2C_1 e ^ {4t} - 3 C_2 e ^ {5t}
+    \end{array}
+    \right) \\
+    & = &
+    \left(
+    \begin{array}{ccc}
+    x \\
+    y
+    \end{array}
+    \right) \\
+  \end{eqnarray*}
+  となるので、求める一般解は
+
+  \begin{numcases}
+    {}
+    x = C_1 e ^ {4t} + 2 C_2 e ^ {5t} \nonumber \\
+    y = -2C_1 e ^ {4t} - 3 C_2 e ^ {5t} \nonumber
+  \end{numcases}
+  \end{qparts}
+\end{spacing}
+\end{document}
