@@ -1,18 +1,35 @@
-\documentclass[12pt,a4paper]{jsarticle}
-\usepackage {amsmath}
-\usepackage {amssymb}
-\usepackage {ascmac}
-\title{夏休み毎日積分~6日目(解答)}
-\date{\today}
-
+\documentclass[dvipdfmx,uplatex]{jsarticle}
+\def\vector#1{\mbox{\boldmath $#1$}}
+\usepackage{qexam} % 問題を書く時とかに必要なやつ
+\usepackage{setspace} % 行間開けるのに必要なやつ
+\usepackage{amsmath} % 数学やるのに必要なやつ
+\usepackage{bm} % 太字にするのに必要なやつ
+\usepackage{cases} % 連立方程式を書くのに必要なやつ
+\usepackage{amssymb}
+\usepackage[hiresbb]{graphicx}
+\usepackage{ascmac}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{braket}
+\usepackage[colorlinks=true, bookmarks=true,
+bookmarksnumbered = true, bookmarkstype = toc, linkcolor = blue,
+urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[version=3]{mhchem}
+\makeatletter
+ \renewcommand{\theequation}{
+   \thesubsection.\arabic{equation}}
+  \@addtoreset{equation}{subsection}
+\title{夏休み毎日積分 Day6（問題）}
+\author{公立はこだて未来大学　システム情報科学部　B2　日置竜輔}
+\date{2020年8月6日}
 \begin{document}
+
 \maketitle
 
-\begin{flushright}
-    \author{作成者:ryusuke.h}
-\end{flushright}
-
-\begin{itembox}[c]{day 6 }
+\begin{itembox}[c]{day 6}
     \begin{center}
         次の定積分を求めよ。\\
         ※今日から本格的に難しくなります。\\
@@ -21,31 +38,29 @@
 \end{itembox}
 
 \begin{description}
-    \item [問1] {\displaystyle}\int_0^2 \frac{2x + 1}{\sqrt{x^2 + 4}} dx
+    \item [問1] $ \displaystyle　\int_0^2 \frac{2x + 1}{\sqrt{x^2 + 4}} dx $
 \end{description}
 
 \begin{align*}
-    \int_0^2 \frac{2x + 1}{\sqrt{x^2 + 4}} dx &= \int_0^2 \frac{2x}{\sqrt{x^2 + 4}} dx + \int_0^2 \frac{1}{\sqrt{x^2 + 4}} dx 
+    \int_0^2 \frac{2x + 1}{\sqrt{x^2 + 4}} dx &= \int_0^2 \frac{2x}{\sqrt{x^2 + 4}} dx + \int_0^2 \frac{1}{\sqrt{x^2 + 4}} dx
     \intertext{と分けて考える。}
 \end{align*}
 
-前半について、
-
-\begin{equation*}
-    t = x^2 + 4~ とおくと、~dt = 2xdx~ であり、x は~0 → 2~のとき、t~は4 → 8~であるから、\\
-\end{equation*}
+前半について、$ t = x ^ 2 + 4 $ とおくと、$ dt = 2xdx $ であり、
+$x$ は $ 0 \rightarrow 2 $ のとき、$t$ は $ 4 \rightarrow 8 $であるから、
 
 \begin{align*}
     \int_0^2 \frac{2x}{\sqrt{x^2 + 4}} dx &= \int_4^8 \frac{1}{\sqrt{t}} dt \\
-    &= [2\sqrt{t}]_4^8 \\
-    &= 4\sqrt{2} - 4~となる。
+    &= \left[2\sqrt{t}\right]_4^8 \\
+    &= 4\sqrt{2} - 4
 \end{align*}
+となる。\\
 
 後半について、
 
-\begin{equation*}
-    x = \tan\theta~と置くと、~d\theta = \frac{2}{\cos^2\theta} d\theta ~であり、~ x は~0 → 2~のとき、\theta~は0 → \frac{\pi}{4}~であるから、\\
-\end{equation*}
+$x = \tan\theta$と置くと、$\displaystyle d\theta = \frac{2}{\cos^2\theta} d\theta$であり、
+$x$ は$0 \rightarrow 2$のとき、\thetaは$\displaystyle 0 \rightarrow \frac{\pi}{4}$であるから、
+
 
 \begin{align*}
     \int_0^2 \frac{1}{\sqrt{x^2 + 4}} dx &= \int_0^\frac{\pi}{4} \frac{1}{2\sqrt{{\tan}^2\theta + 1}} \frac{2}{\cos^2\theta} d\theta \\
@@ -53,47 +68,49 @@
     &= \int_0^\frac{\pi}{4} \frac{\cos\theta}{1 - \sin^2\theta} d\theta
 \end{align*}
 
-\begin{equation*}
-    さらにここで、t = \sin\theta~と置くと、~dt = \cos\theta d\theta ~であり、~ \theta は~0 → \frac{\pi}{4}~のとき、t~は0 → \frac{1}{\sqrt{2}}~であるから、\\
-\end{equation*}
+さらにここで、
+$t = \sin\theta$と置くと、$dt = \cos\theta d\theta$であり、~ \theta は$ \displaystyle 0 \rightarrow \frac{\pi}{4}$のとき、$t$は$\displaystyle 0 \rightarrow \frac{1}{\sqrt{2}}$であるから、\\
 
 \begin{align*}
     \int_0^2 \frac{1}{\sqrt{x^2 + 4}} dx &= \int_0^\frac{1}{\sqrt{2}} \frac{1}{1 - t^2} dt \\
-    &= \int_0^\frac{1}{\sqrt{2}} \frac{1}{2}(\frac{1}{1 - t} + \frac{1}{1 + t}) dt \\
-    &= \frac{1}{2} [\log{\left}| \frac{1 + t}{1 - t} {\right}|]_0^\frac{1}{\sqrt{2}} \\
+    &= \int_0^\frac{1}{\sqrt{2}} \frac{1}{2}\left(\frac{1}{1 - t} + \frac{1}{1 + t}\right) dt \\
+    &= \frac{1}{2} \left[\log\left| \frac{1 + t}{1 - t} \right|\right]_0^\frac{1}{\sqrt{2}} \\
     &= \frac{1}{2}\log\frac{\sqrt{2}+ 1}{\sqrt{2} - 1} \\
     &= \frac{1}{2}\log(\sqrt{2} + 1)^2 \\
     &= \log(\sqrt{2} + 1)
 \end{align*}
 
+\newpage
+
 \begin{description}
-    \item [問2] {\displaystyle} \int_0^2 \left|x^2 - a^2\right| dx をaを用いて表せ。\\
+    \item [問2] $\displaystyle \int_0^2 \left|x^2 - a^2\right| dx$ を$a$を用いて表せ。\\
 \end{description}
 
-\intertext{{&}解法について、\\{&}{\left}x = a\right が積分区間 0 \leqq~ x \leqq~ 2 に含まれているか否かで場合分けをする。\\}
-\intertext{(a) 0 \leq a\leqq 2 のとき、}
+$x = a$が積分区間 $0 \leqq x \leqq 2$ に含まれているか否かで場合分けをする。\\
+($a$) $0 \leq a\leqq 2$ のとき、
 
 \begin{align*}
-    (与式) &= \int_0^a \{ - (x^2 - a^2)\} dx + \int_a^2 (x^2 - a^2) dx \\
+    (与式) &= \int_0^a \left\{ - (x ^ 2 - a ^ 2)\right\} dx + \int_a^2 (x^2 - a^2) dx \\
     &= \left[-\frac{x^3}{3} + a^2x\right]_0^a + \left[\frac{x^3}{3} - a^2\right]_a^2 \\
-    &= \frac{2}{3}a^3 + (\frac{8}{3} - 2a^2 + \frac{2}{3}a^3) \\
+    &= \frac{2}{3}a^3 + \left(\frac{8}{3} - 2a^2 + \frac{2}{3}a ^ 3\right) \\
     &= \frac{4}{3}a^3 - 2a^2 + \frac{8}{3}
 \end{align*}
 
-\intertext{(b)  a {\geqq} 2 のとき、}
+($b$)  $a \geqq 2$ のとき、
 
 \begin{align*}
-    (与式) &= \int_0^2 \{- (x^2 - a^2)\} dx \\ 
+    (与式) &= \int_0^2 \left\{- (x^2 - a^2)\right\} dx \\
     &= \left[ - \frac{x^3}{3} + a^2x\right]_0^2 \\
     &= 2a^2 - \frac{8}{3}
 \end{align*}
 
-したがって、(a), (b) より\\
-
-\begin{cases}
-    {\left}\frac{4}{3}a^3 - 2a^2 + \frac{8}{3} {\right}~~~~ (0 ~\leq a~ \leqq 2~のとき) \\
-    {\left}2a^2 - \frac{8}{3} {\right}~~~~(a~\geqq~2~のとき) \\
-\end{cases}
+したがって、($a$), ($b$) より\\
+\[
+  \begin{cases}
+    $ \displaystyle \frac{4}{3}a^3 - 2a^2 + \frac{8}{3} \qquad (0 \leq a \leqq 2のとき)$　\\
+    $ \displaystyle 2a^2 - \frac{8}{3} \qquad ( a \geqq 2 のとき)$
+  \end{cases}
+\]
 
 \begin{boxnote}
     〜補足〜

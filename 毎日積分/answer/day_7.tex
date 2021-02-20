@@ -1,18 +1,35 @@
-\documentclass[12pt,a4paper]{jsarticle}
-\usepackage {amsmath}
-\usepackage {amssymb}
-\usepackage {ascmac}
-\title{夏休み毎日積分~7日目(解答)}
-\date{\today}
-
+\documentclass[dvipdfmx,uplatex]{jsarticle}
+\def\vector#1{\mbox{\boldmath $#1$}}
+\usepackage{qexam} % 問題を書く時とかに必要なやつ
+\usepackage{setspace} % 行間開けるのに必要なやつ
+\usepackage{amsmath} % 数学やるのに必要なやつ
+\usepackage{bm} % 太字にするのに必要なやつ
+\usepackage{cases} % 連立方程式を書くのに必要なやつ
+\usepackage{amssymb}
+\usepackage[hiresbb]{graphicx}
+\usepackage{ascmac}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{braket}
+\usepackage[colorlinks=true, bookmarks=true,
+bookmarksnumbered = true, bookmarkstype = toc, linkcolor = blue,
+urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[version=3]{mhchem}
+\makeatletter
+ \renewcommand{\theequation}{
+   \thesubsection.\arabic{equation}}
+  \@addtoreset{equation}{subsection}
+\title{夏休み毎日積分 Day7（問題）}
+\author{公立はこだて未来大学　システム情報科学部　B2　日置竜輔}
+\date{2020年8月7日}
 \begin{document}
+
 \maketitle
 
-\begin{flushright}
-    \author{作成者:ryusuke.h}
-\end{flushright}
-
-\begin{itembox}{day 7 }
+\begin{itembox}{day 7}
     \begin{center}
         次の定積分を求めよ。\\
         ※今日はガウス積分です。
@@ -20,27 +37,27 @@
 \end{itembox}
 
 \begin{description}
-    \item [問1] {\displaystyle} \int_{-\infty}^{\infty} e^{-ax^2} dx \\
+    \item [問1] $\displaystyle \int_{-\infty}^{\infty} e^{-ax^2} dx$
 \end{description}
 
 求める積分値をIとおく。
 
 \begin{align*}
-    I^2 &= \left(\int_{-\infty}^{\infty} e^{-x^2} dx\right)^2 
+    I^2 &= \left(\int_{-\infty}^{\infty} e^{-x^2} dx\right)^2
     =  \int_{-\infty}^{\infty} e^{-x^2} dx \int_{-\infty}^{\infty} e^{-y^2} dy\\
 \end{align*}
 
-ここで x = r\cos\theta , y = r\sin\theta と置換すると，ヤコビアンは r なので，
+ここで $x = r\cos\theta$ , $y = r\sin\theta$ と置換すると，ヤコビアンは $r$ なので，
 
 \begin{align*}
-    I^2 &= \int_0^{\infty} \int_0^2{\pi} e^{-ar^2} r d{\theta}dr 
+    I^2 &= \int_0^{\infty} \int_0^2{\pi} e^{-ar^2} r d{\theta}dr
     = 2{\pi} \int_0^{\infty} e^{-ar^2} r dr \\
     &= 2{\pi} \left[\frac{e^{-ar^2}}{-2a}\right]_0^{\infty} \\
     &= \frac{\pi}{a}
 \end{align*}
 
 \begin{description}
-    \item [問2] {\displaystyle} \int_{-\infty}^{\infty} e^{-a(x-b)^2} dx
+    \item [問2] $\displaystyle \int_{-\infty}^{\infty} e^{-a(x-b)^2} dx$
 \end{description}
 
 平行移動しても積分値は変わらない(x軸方向に+b平行移動)ので、グラフの形は不変であるので、
@@ -50,7 +67,7 @@
 \end{align*}
 
 \begin{description}
-    \item [問3] {\displaystyle} \int_0^{\infty} e^{-ax^2} dx
+    \item [問3] $\displaystyle \int_0^{\infty} e^{-ax^2} dx$
 \end{description}
 
 積分区間が問１の半分であるから、

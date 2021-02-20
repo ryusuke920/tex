@@ -1,10 +1,10 @@
-This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.11.27)  20 FEB 2021 16:42
+This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.11.27)  20 FEB 2021 17:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**day_5.tex
-(./day_5.tex
+**day_6.tex
+(./day_6.tex
 pLaTeX2e <2020-10-01u04>+1 (based on LaTeX2e <2020-10-01> patch level 2)
 L3 programming layer <2020-10-27> xparse <2020-03-03> (/usr/local/texlive/2020/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 Document Class: jsarticle 2020/10/09 jsclasses (okumura, texjporg)
@@ -641,8 +641,8 @@ Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use 
 \mhchem@option@minusmathsidebearingright=\dimen328
 \mhchem@option@minustextsidebearingleft=\dimen329
 \mhchem@option@minustextsidebearingright=\dimen330
-) (./day_5.aux)
-\openout1 = `day_5.aux'.
+) (./day_6.aux)
+\openout1 = `day_6.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
@@ -683,9 +683,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 28.
 LaTeX Info: Redefining \pageref on input line 28.
 LaTeX Info: Redefining \nameref on input line 28.
- (./day_5.out) (./day_5.out)
+ (./day_6.out) (./day_6.out)
 \@outlinefile=\write4
-\openout4 = `day_5.out'.
+\openout4 = `day_6.out'.
 
 
 Package chemgreek Info: Activating mapping `default' on line 28.
@@ -725,20 +725,79 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 5.5481pt on input line 31.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 40.
- [1
+(Font)              scaled to size 9.24683pt on input line 41.
 
-] [2] (./day_5.aux)
-Package rerunfilecheck Info: File `day_5.out' has not changed.
+./day_6.tex:62: Undefined control sequence.
+l.62 $x$ は$0 \rightarrow 2$のとき、\thetaは
+                                                  $\displaystyle 0 \rightarr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./day_6.tex:72: Missing $ inserted.
+<inserted text> 
+                $
+l.72 ... = \cos\theta d\theta$であり、~ \theta
+                                                   は$ \displaystyle 0 \rig...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./day_6.tex:72: Missing $ inserted.
+<inserted text> 
+                $
+l.72 ...ta$であり、~ \theta は$ \displaystyle
+                                                   0 \rightarrow \frac{\pi}{...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[1
+
+] [2]
+./day_6.tex:110: Missing $ inserted.
+<inserted text> 
+                $
+l.110     $ \displaystyle
+                          \frac{4}{3}a^3 - 2a^2 + \frac{8}{3} \qquad (0 \leq...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./day_6.tex:110: Missing $ inserted.
+<inserted text> 
+                $
+l.110 ... \qquad (0 \leq a \leqq 2のとき)$　\\
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./day_6.tex:111: Missing $ inserted.
+<inserted text> 
+                $
+l.111     $ \displaystyle
+                          2a^2 - \frac{8}{3} \qquad ( a \geqq 2 のとき)$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./day_6.tex:112: Missing $ inserted.
+<inserted text> 
+                $
+l.112   \end{cases}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[3] (./day_6.aux)
+Package rerunfilecheck Info: File `day_6.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  32908 strings out of 479950
  796431 string characters out of 5884201
- 1262112 words of memory out of 5000000
+ 1264112 words of memory out of 5000000
  49657 multiletter control sequences out of 15000+600000
  555674 words of font info for 123 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 80i,9n,85p,409b,733s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 80i,11n,85p,409b,733s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on day_5.dvi (2 pages, 5136 bytes).
+Output written on day_6.dvi (3 pages, 10016 bytes).
