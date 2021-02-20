@@ -1,5 +1,5 @@
 # tex
-TeXのテンプレートや過去の製作物・成果物を載せています
+TeXのテンプレートや過去の製作物を載せています
 
 # 目次
 - [DifferentialEquation](https://github.com/ryusuke920/tex/tree/main/DifferentialEquation)
