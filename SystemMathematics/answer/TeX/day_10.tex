@@ -1,0 +1,86 @@
+\documentclass[dvipdfmx,uplatex]{jsarticle}
+\def\vector#1{\mbox{\boldmath $#1$}}
+\usepackage{qexam} % 問題を書く時とかに必要なやつ
+\usepackage{setspace} % 行間開けるのに必要なやつ
+\usepackage{amsmath} % 数学やるのに必要なやつ
+\usepackage{bm} % 太字にするのに必要なやつ
+\usepackage{cases} % 連立方程式を書くのに必要なやつ
+\usepackage{amssymb}
+\usepackage[hiresbb]{graphicx}
+\usepackage{ascmac}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{braket}
+\usepackage[colorlinks=true, bookmarks=true,
+bookmarksnumbered = true, bookmarkstype = toc, linkcolor = blue,
+urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[version=3]{mhchem}
+\makeatletter
+ \renewcommand{\theequation}{
+   \thesubsection.\arabic{equation}}
+  \@addtoreset{equation}{subsection}
+\title{夏休み毎日積分 Day10（解答）}
+\author{公立はこだて未来大学　システム情報科学部　B2　日置竜輔}
+\date{2020年8月10日}
+\begin{document}
+
+\maketitle
+
+\begin{itembox}{day 10}
+    \begin{center}
+        次の定積分を求めよ。\\
+        今日も今日とて重積分の問題です。\\
+        飽きてきたと思うので、明日は変わった問題を出題してみます。
+    \end{center}
+\end{itembox}
+
+\begin{description}
+    \item [問1] $ \displaystyle \iint_D \sqrt{y}dxdy \qquad
+    D = \left\{(x,y) | \sqrt{\frac{x}{a}} + \sqrt{\frac{y}{b}} \leqq 1, \quad (a > 0, b > 0) \right\}$
+\end{description}
+
+\begin{align*}
+    &{\displaystyle}\sqrt{\frac{x}{a}} + \sqrt{\frac{y}{b}} ~=~ 1~のとき~~x ~=~a\left(1~-~\sqrt{\frac{y}{b}}\right)^2 から、\\
+    &D = \left\{(x,y)~:~0 ~\leqq~ x ~\leqq~ a\left(1 ~-~\sqrt{\frac{y}{b}}\right)^2,~0 ~\leqq~y~\leqq~b\right\}となるので、\\
+\end{align*}
+
+\begin{align*}
+    &\iint_D \sqrt{y}dxdy ~=~ \int_0^b\left(\int_0^a\left(1 - \sqrt{\frac{y}{b}}\right)\sqrt{y}dx\right)~dy
+    = \int_0^b \sqrt{y}\left[x\right]_{x=0}^{x=a\left(1-\sqrt{\frac{y}{b}}\right)^2}dy \\
+    &= a\int_0^b \sqrt{y}\left(1-\sqrt{\frac{y}{b}}\right)^2dy = a\int_0^b\left(\sqrt{y}-\frac{2y}{\sqrt{b}}+\frac{y^{\frac{3}{2}}}{b}\right)dy \\
+    &= a\left[\frac{2}{3}y^{\frac{3}{2}} - \frac{2}{\sqrt{b}}frac{y^2}{2} + \frac{1}{b}\frac{2}{5}y^{\frac{5}{2}}\right]_0^b\\
+    &= \frac{1}{15}ab^{\frac{3}{2}}
+\end{align*}
+
+\begin{description}
+    \item [問2] $\displaystyle \int_0^{\frac{\pi}{2}} dx \int_0^{\frac{\pi}{2}} \sin(x + y)dy $
+\end{description}
+
+\begin{align*}
+    \int_0^{\frac{\pi}{2}} \sin(x+y) dy &= \left[-\cos(x+y)\right]_{y = 0}^{y = \frac{\pi}{2}} \\
+    &= \left\{-\cos(x + \frac{\pi}{2})\right\} - \left(-\cos(x)\right) \\
+\end{align*}
+
+ここで、$ \displaystyle \cos\left(x + \frac{\pi}{2}\right) = -\sin{x}$を用いると、
+
+\begin{align*}
+    \left\{-\cos(x + \frac{\pi}{2})\right\} - \left\{-\cos(x)\right\}  = \sin{x} + \cos{x}\\
+\end{align*}
+
+となるので \\
+
+\begin{align*}
+    \int_0^{\frac{\pi}{2}} (\sin{x} + \cos{x}) dy = \left[- \cos(x+y)\right]_{y = 0}^{y = \frac{\pi}{2}}
+    = (0 + 1)-(-1+0) ~=~ 2
+\end{align*}
+
+\begin{boxnote}
+    \begin{center}
+        解説でわからなければ自分で調べるか、個別に聞いてください。
+    \end{center}
+\end{boxnote}
+
+\end{document}

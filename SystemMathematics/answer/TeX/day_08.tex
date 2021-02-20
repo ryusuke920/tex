@@ -1,0 +1,71 @@
+\documentclass[dvipdfmx,uplatex]{jsarticle}
+\def\vector#1{\mbox{\boldmath $#1$}}
+\usepackage{qexam} % 問題を書く時とかに必要なやつ
+\usepackage{setspace} % 行間開けるのに必要なやつ
+\usepackage{amsmath} % 数学やるのに必要なやつ
+\usepackage{bm} % 太字にするのに必要なやつ
+\usepackage{cases} % 連立方程式を書くのに必要なやつ
+\usepackage{amssymb}
+\usepackage[hiresbb]{graphicx}
+\usepackage{ascmac}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{braket}
+\usepackage[colorlinks=true, bookmarks=true,
+bookmarksnumbered = true, bookmarkstype = toc, linkcolor = blue,
+urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[version=3]{mhchem}
+\makeatletter
+ \renewcommand{\theequation}{
+   \thesubsection.\arabic{equation}}
+  \@addtoreset{equation}{subsection}
+\title{夏休み毎日積分 Day8（解答）}
+\author{公立はこだて未来大学　システム情報科学部　B2　日置竜輔}
+\date{2020年8月8日}
+\begin{document}
+
+\maketitle
+
+\begin{itembox}{day 8 }
+    \begin{center}
+        次の定積分を求めよ。\\
+        ※今日はガウス積分です。
+    \end{center}
+\end{itembox}
+
+\begin{description}
+    \item [問1] $\displaystyle \iint_R e^{\frac{y}{x}} dxdy \qquad (R = \{(x,y); 0 \leq x \leqq 1, 0 \leqq y \leqq x\});$
+\end{description}
+
+求める積分値をIとすると、
+
+\begin{align*}
+    I &= \int_0^1 \left( \int_0^x e^\frac{y}{x} dy\right) dx \\
+    &= \int_0^1 \left[ xe^\frac{y}{x}\right]_0^x = \int_0^1 (xe - x) dx \\
+    &= \left[ \frac{x^2}{2}(e - 1)\right]_0^1 = \frac{1}{2}(e - 1)
+\end{align*}
+
+\begin{description}
+    \item [問2] $\displaystyle \iint_D \sqrt{a^2 - x^2 - y^2} dxdy \qquad (D = \{(x,y); x^2 + y^2 \leqq a^2\});$
+\end{description}
+
+求める積分値をIとして、極座標に変換すると、
+
+\begin{align*}
+    I &= \int_0^a\int_0^{2\pi} \sqrt{a^2 - r^2} rdrd\theta \\
+    &= \int_0^a \sqrt{a^2 - r^2} r \left(\int_0^{2\pi} d\theta \right) = 2\pi \int_0^a \sqrt{a^2 - r^2}rdr \\
+    &= \frac{2\pi}{3}\left[ - \left(a^2 - r^2\right)^\frac{3}{2}\right]_0^a = \frac{2}{3}{\pi}a^2
+\end{align*}
+
+\begin{boxnote}
+    〜補足〜
+    \begin{center}
+        重積分を行いました。\\
+        解説でわからなければ自分で調べるか、個別に聞いてください。
+    \end{center}
+\end{boxnote}
+
+\end{document}

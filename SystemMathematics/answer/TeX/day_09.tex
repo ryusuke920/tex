@@ -1,0 +1,71 @@
+\documentclass[dvipdfmx,uplatex]{jsarticle}
+\def\vector#1{\mbox{\boldmath $#1$}}
+\usepackage{qexam} % 問題を書く時とかに必要なやつ
+\usepackage{setspace} % 行間開けるのに必要なやつ
+\usepackage{amsmath} % 数学やるのに必要なやつ
+\usepackage{bm} % 太字にするのに必要なやつ
+\usepackage{cases} % 連立方程式を書くのに必要なやつ
+\usepackage{amssymb}
+\usepackage[hiresbb]{graphicx}
+\usepackage{ascmac}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{braket}
+\usepackage[colorlinks=true, bookmarks=true,
+bookmarksnumbered = true, bookmarkstype = toc, linkcolor = blue,
+urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[version=3]{mhchem}
+\makeatletter
+ \renewcommand{\theequation}{
+   \thesubsection.\arabic{equation}}
+  \@addtoreset{equation}{subsection}
+\title{夏休み毎日積分 Day9（解答）}
+\author{公立はこだて未来大学　システム情報科学部　B2　日置竜輔}
+\date{2020年8月9日}
+\begin{document}
+
+\maketitle
+
+\begin{itembox}{day 9}
+    \begin{center}
+        次の定積分を求めよ。\\
+        ※今日はガウス積分です。
+    \end{center}
+\end{itembox}
+
+\begin{description}
+    \item [問1] $\displaystyle \iint_D xdxdy \qquad D = \left\{(x, y) | x + y < 2 , x > 0, y > 0 \right\} $
+\end{description}
+
+\begin{align*}
+    \iint_D xdxdy &= \int_0^2 dx \int_0^{2-x} xdy \\
+    &= \int_0^2 \left(x\left[y\right]_0^{2-x}\right)dx = \int_0^2 x\left(2 - x\right) dx = \left[x^2 - \frac{1}{3}x^3\right]_0^2  = \frac{4}{3}
+\end{align*}
+
+\begin{description}
+    \item [問2] $\displaystyle \iint_D (1 - x - y)dxdy \qquad D = \left\{ (x, y) | x + y \leqq  1 , x \geqq 0, y \geqq 0 \right\}$
+\end{description}
+
+\begin{align*}
+    \iint_D (1 - x - y)dxdy &= \int_0^1 \left\{\int_0^{1-x} (1 - x - y)dy\right\}dx\\
+    &= \int_0^1 \left[-\frac{(1 - x - y)^2}{2}\right]_0^{1-x} dx \\
+    &= \int_0^1 \frac{(1-x)^2}{2} dx \\
+    &= \left[ - \frac{(1-x)^3}{6}\right]_0^1\\
+    &= \frac{1}{6}
+\end{align*}
+
+\newpage
+
+\begin{boxnote}
+    〜補足〜
+    \begin{center}
+        再び重積分を行いました。\\
+        グラフを想像したら比較的容易に溶ける問題です。\\
+        解説でわからなければ自分で調べるか、個別に聞いてください。
+    \end{center}
+\end{boxnote}
+
+\end{document}
