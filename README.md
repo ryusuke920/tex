@@ -2,9 +2,9 @@
 TeXのテンプレートや過去の製作物・成果物を載せています
 
 # 目次
-- [毎日微分方程式](https://github.com/ryusuke920/tex/tree/main/%E6%AF%8E%E6%97%A5%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F)
-- [毎日積分](https://github.com/ryusuke920/tex/tree/main/%E6%AF%8E%E6%97%A5%E7%A9%8D%E5%88%86)
-- [確率論レポート](https://github.com/ryusuke920/tex/tree/main/%E7%A2%BA%E7%8E%87%E8%AB%96%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88)
+- [DifferentialEquation](https://github.com/ryusuke920/tex/tree/main/DifferentialEquation)
+- [SystemMathematics](https://github.com/ryusuke920/tex/tree/main/SystemMathematics)
+- [ProbabilityTheoryReport](https://github.com/ryusuke920/tex/tree/main/ProbabilityTheoryReport)
 - [高校数学](https://github.com/ryusuke920/tex/tree/main/%E9%AB%98%E6%A0%A1%E6%95%B0%E5%AD%A6)
 
 ## DifferentialEquation
