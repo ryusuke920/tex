@@ -1,0 +1,61 @@
+\documentclass[dvipdfmx,uplatex]{jsarticle}
+\def\vector#1{\mbox{\boldmath $#1$}}
+\usepackage{qexam} % 問題を書く時とかに必要なやつ
+\usepackage{setspace} % 行間開けるのに必要なやつ
+\usepackage{amsmath} % 数学やるのに必要なやつ
+\usepackage{bm} % 太字にするのに必要なやつ
+\usepackage{cases} % 連立方程式を書くのに必要なやつ
+\usepackage{amssymb}
+\usepackage[hiresbb]{graphicx}
+\usepackage{ascmac}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{braket}
+\usepackage[colorlinks=true, bookmarks=true,
+bookmarksnumbered = true, bookmarkstype = toc, linkcolor = blue,
+urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[version=3]{mhchem}
+\makeatletter
+ \renewcommand{\theequation}{
+   \thesubsection.\arabic{equation}}
+  \@addtoreset{equation}{subsection}
+\title{春休み毎日微分方程式 Day 11（解答）}
+\author{公立はこだて未来大学　システム情報科学部　B2　日置竜輔}
+\date{2021年3月22日}
+
+\begin{document}
+\begin{spacing}{1.6}
+\maketitle
+
+\question{問1}
+次の関数$f(x)$が次の条件を満たす時、$f(x)$を答えよ。\\
+\begin{qparts}
+  \qpart 任意の実数$x$に対して、
+  \begin{equation*}
+    \int_0^x f(t)dt - 3\int_{-x}^0 f(t)dt = x^3
+  \end{equation*}
+  両辺を微分すると、
+  \begin{equation}
+    f(x) - 3f(-x) = 3x^2
+  \end{equation}
+  ここで$x \rightarrow -x$と置換すると、
+  \begin{equation}
+    f(-x) - 3f(x) = 3x^2
+  \end{equation}
+  が得られるので、(0.0.1),(0.0.2)の２式を連立すると、
+  \begin{eqnarray*}
+    -8f(x) & = & 12x^2 \\
+    f(x) & = & - \frac{3}{2}x^2
+  \end{eqnarray*}
+  \end{qparts}
+  \end{spacing}
+  \begin{shadebox}
+    これは某私立の大学入試の改題です。 
+    高校生レベルで解ける問題を用意してみました。 \\
+    色々なパターンに慣れていけると良いですね。
+  \end{shadebox}
+
+\end{document}
