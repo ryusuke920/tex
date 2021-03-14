@@ -1,0 +1,70 @@
+\documentclass[dvipdfmx,uplatex]{jsarticle}
+\def\vector#1{\mbox{\boldmath $#1$}}
+\usepackage{qexam} % 問題を書く時とかに必要なやつ
+\usepackage{setspace} % 行間開けるのに必要なやつ
+\usepackage{amsmath} % 数学やるのに必要なやつ
+\usepackage{bm} % 太字にするのに必要なやつ
+\usepackage{cases} % 連立方程式を書くのに必要なやつ
+\usepackage{amssymb}
+\usepackage[hiresbb]{graphicx}
+\usepackage{ascmac}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{braket}
+\usepackage[colorlinks=true, bookmarks=true,
+bookmarksnumbered = true, bookmarkstype = toc, linkcolor = blue,
+urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[version=3]{mhchem}
+\makeatletter
+ \renewcommand{\theequation}{
+   \thesubsection.\arabic{equation}}
+  \@addtoreset{equation}{subsection}
+\title{春休み毎日微分方程式 Day 12（解答）}
+\author{公立はこだて未来大学　システム情報科学部　B2　日置竜輔}
+\date{2021年3月24日}
+
+\begin{document}
+\begin{spacing}{1.6}
+\maketitle
+
+\question{問1}
+以下の微分方程式を解け。
+\begin{qparts}
+  \qpart
+  \begin{equation*}
+      (3y^2 - 2xy) + (x^2-2xy)y' = 0
+  \end{equation*}
+  \begin{eqnarray*}
+    y' & = & \frac{-3^2 + 2xy}{x^2 - 2xy} \\
+    & = & \frac{-3\left(\frac{y}{x}\right)^2 + 2\left(\frac{y}{x}\right)}{1 - 2\left(\frac{y}{x}\right)}
+  \end{eqnarray*}
+  $\displaystyle z = \frac{y}{x}$ と変数変換を行うと、 $y' = z + xz'$となるのでもとの微分方程式に代入すると、\\
+  \begin{eqnarray*}
+    z + xz' & = & \frac{-3z^2 + 2z}{1 - 2z} \\
+    xz' & = & \frac{-3z^2 + 2z}{1 - 2z} - z \\
+    & = & \frac{z - z^2}{1 - 2z}
+  \end{eqnarray*}
+  さらにここから変数分離を行うと、以下のように式変形できる。
+  \begin{eqnarray*}
+    \frac{1 - 2z}{z - z^2}dz & = & \frac{dx}{x} \\
+    \int \frac{1 - 2z}{z - z^2} & = & \int \frac{dx}{x} \\
+    \log |z - z^2| & = & log|x| + C' \\
+    \log \left|\frac{z - z^2}{x}\right| & = & C' \\
+    \frac{z - z^2}{x} & = & \pm e^{C'} \\
+    z - z^2 & = & Cx
+  \end{eqnarray*}
+  $z$の式を$y$に直すと、
+  \begin{eqnarray*}
+    \frac{y}{x} - \frac{y^2}{x^2} & = & Cx \\
+    xy - y^2 & = & Cx^3 \\
+    y^2 - xy + Cx^3 & = & 0
+  \end{eqnarray*}
+  \end{qparts}
+\end{spacing}
+\begin{shadebox}
+  今回はまた変数分離系と同次系の問題を出題しました。なかなか式変形などが大変だと思うので頑張って慣れましょう！
+\end{shadebox}
+\end{document}
