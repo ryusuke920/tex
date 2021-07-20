@@ -2,10 +2,10 @@
 TeXのテンプレートや過去の製作物を載せています
 
 # 目次
-- [DifferentialEquation](https://github.com/ryusuke920/tex/tree/main/DifferentialEquation)
-- [SystemMathematics](https://github.com/ryusuke920/tex/tree/main/SystemMathematics)
-- [ProbabilityTheoryReport](https://github.com/ryusuke920/tex/tree/main/ProbabilityTheoryReport)
-- [PatternRecognition](https://github.com/ryusuke920/tex/tree/main/PatternRecognition)
+1. [DifferentialEquation](https://github.com/ryusuke920/tex/tree/main/DifferentialEquation)
+2. [SystemMathematics](https://github.com/ryusuke920/tex/tree/main/SystemMathematics)
+3. [ProbabilityTheoryReport](https://github.com/ryusuke920/tex/tree/main/ProbabilityTheoryReport)
+4. [PatternRecognition](https://github.com/ryusuke920/tex/tree/main/PatternRecognition)
 
 
 ## [DifferentialEquation](https://github.com/ryusuke920/tex/tree/main/DifferentialEquation)
@@ -83,7 +83,7 @@ DCT係数を求めたり、画像の復元を行なっています。
 ### 内容
 |File Name|Contents|PDF|TeX|
 |:--:|:--:|:--:|:--:|
-|Report1|顔画像を認識し、DCT係数を求める|||
+|Report1|顔画像を認識し、DCT係数を求める|[PDF](https://github.com/ryusuke920/tex/blob/main/PatternRecognition/Report1/Report1.pdf)|[TeX](https://github.com/ryusuke920/tex/blob/main/PatternRecognition/Report1/Report1.pdf)|
 
 
 ## qexam
