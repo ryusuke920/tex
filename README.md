@@ -16,52 +16,15 @@ TeXのテンプレートや過去の製作物を載せています
 |File Number|Contents|Problem PDF|Answer PDF|Problem TeX|Answer TeX|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |day_01|超基本となる微分方程式の一般解と特殊解|[問題PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_1.pdf)|[解答PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_1.pdf)|[問題TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_1.tex)|[解答TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_1.tex)|
-|day_02||||||
-|day_03||||||
-|day_04||||||
-|day_05||||||
-|day_06||||||
-|day_07||||||
-|day_08||||||
-|day_09||||||
-|day_10||||||
- 
-
-2. 変数分離系の基本問題
-&ensp; [問題](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_2.pdf)
-&ensp; [解答](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_2.pdf)
-
-3. 同次系の基本問題
-&ensp; [問題](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_3.pdf)
-&ensp; [解答](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_3.pdf)
-
-4. 1階線形微分方程式の基本問題
-&ensp; [問題](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_4.pdf)
-&ensp; [解答](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_4.pdf)
-
-5. 微分演算子の使用方法
-&ensp; [問題](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_5.pdf)
-&ensp; [解答](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_5.pdf)
-
-6. 微分演算子と定数変化法の関係・公式の導出
-&ensp; [問題](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_6.pdf)
-&ensp; [解答](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_6.pdf)
-
-7. 三角関数を含む変数分離系
-&ensp; [問題](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_7.pdf)
-&ensp; [解答](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_7.pdf)
-
-8. ニュートンの冷却の法則に基づいた微分方程式
-&ensp; [問題](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_8.pdf)
-&ensp; [解答](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_8.pdf)
-
-9. 対角化を用いた連立微分方程式
-&ensp; [問題](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_9.pdf)
-&ensp; [解答](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_9.pdf)
-
-10. 微分演算子を用いた初等演算子法
-&ensp; [問題](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_10.pdf)
-&ensp; [解答](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_10.pdf)
+|day_02|変数分離系の基本問題|[問題PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_2.pdf)|[解答PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_2.pdf)|[問題TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_2.tex)|[解答TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_2.tex)|
+|day_03|同次系の基本問題|[問題PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_3.pdf)|[解答PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_3.pdf)|[問題TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_3.tex)|[解答TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_3.tex)|
+|day_04|1階線形微分方程式の基本問題|[問題PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_4.pdf)|[解答PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_4.pdf)|[問題TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_4.tex)|[解答TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_4.tex)|
+|day_05|微分演算子の使用方法|[問題PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_5.pdf)|[解答PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_5.pdf)|[問題TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_5.tex)|[解答TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_5.tex)|
+|day_06|微分演算子と定数変化法の関係・公式の導出|[問題PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_6.pdf)|[解答PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_6.pdf)|[問題TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_6.tex)|[解答TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_6.tex)|
+|day_07|三角関数を含む変数分離系|[問題PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_7.pdf)|[解答PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_7.pdf)|[問題TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_7.tex)|[解答TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_7.tex)|
+|day_08|ニュートンの冷却の法則に基づいた微分方程式|[問題PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_8.pdf)|[解答PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_8.pdf)|[問題TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_8.tex)|[解答TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_8.tex)|
+|day_09|対角化を用いた連立微分方程式|[問題PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_9.pdf)|[解答PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_9.pdf)|[問題TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_9.tex)|[解答TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_9.tex)|
+|day_10|微分演算子を用いた初等演算子法|[問題PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_10.pdf)|[解答PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_10.pdf)|[問題TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_10.tex)|[解答TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_10.tex)|
 
 ## [SystemMathematics](https://github.com/ryusuke920/tex/tree/main/SystemMathematics)
 2年前期の必修科目である確率論, システム数学基礎の講義後に習った内容を忘れないよう自作問題を作成し、夏休みに毎日解くための問題です  
