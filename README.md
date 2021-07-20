@@ -84,6 +84,7 @@ DCT係数を求めたり、画像の復元を行なっています。
 |File Name|Contents|PDF|TeX|
 |:--:|:--:|:--:|:--:|
 |Report1|顔画像を認識し、DCT係数を求める|[PDF](https://github.com/ryusuke920/tex/blob/main/PatternRecognition/Report1/Report1.pdf)|[TeX](https://github.com/ryusuke920/tex/blob/main/PatternRecognition/Report1/Report1.pdf)|
+|Report2|#|[PDF](https://github.com/ryusuke920/tex/blob/main/PatternRecognition/Report1/Report2.pdf)|[TeX](https://github.com/ryusuke920/tex/blob/main/PatternRecognition/Report1/Report2.pdf)|
 
 
 ## qexam
