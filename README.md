@@ -13,12 +13,19 @@ TeXのテンプレートや過去の製作物を載せています
 （基本的には）だんだん難易度が上がっていくように作成してあります
 
 ### 内容
-|File Number|Contents|Problem PDF|Problem TeX|Answer PDF|Answer TeX|
+|File Number|Contents|Problem PDF|Answer PDF|Problem TeX|Answer TeX|
 |:--:|:--:|:--:|:--:|:--:|:--:|
-|||||||
-1. 超基本となる微分方程式の一般解と特殊解 
-&ensp; [問題](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_1.pdf)
-&ensp; [解答](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_1.pdf)
+|day_01|超基本となる微分方程式の一般解と特殊解|[問題PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_1.pdf)|[解答PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_1.pdf)|[問題TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_1.tex)|[解答TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_1.tex)|
+|day_02||||||
+|day_03||||||
+|day_04||||||
+|day_05||||||
+|day_06||||||
+|day_07||||||
+|day_08||||||
+|day_09||||||
+|day_10||||||
+ 
 
 2. 変数分離系の基本問題
 &ensp; [問題](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_2.pdf)
