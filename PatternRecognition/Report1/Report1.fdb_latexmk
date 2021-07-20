@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1626715482 "Report1.dvi" "Report1.pdf" "Report1" 1626715489
-  "Report1.dvi" 1626715482 39828 7855a78d4e1d147cecc71695eb61ccf0 "latex"
+["dvipdf"] 1626742832 "Report1.dvi" "Report1.pdf" "Report1" 1626742835
+  "Report1.dvi" 1626742832 41156 0588b7f564d86db83a35055da421d5ce "latex"
   (generated)
   "Report1.pdf"
-["latex"] 1626715474 "Report1.tex" "Report1.dvi" "Report1" 1626715489
+["latex"] 1626742826 "Report1.tex" "Report1.dvi" "Report1" 1626742835
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm0800.tfm" 1136768653 1536 05df9db6aeccc4eea94fec15c9024f79 ""
@@ -212,15 +212,16 @@
   "/usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf" 1598393674 39451 15a3ebee027466ecb89701aa91dfebaf ""
   "/usr/local/texlive/2020/texmf-var/web2c/euptex/uplatex.fmt" 1606411529 2583328 054e649ad26b2ff1a8d6958649911495 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "Report1.aux" 1626715482 2840 2460a1c828d7f9a0f12f1b93f41d9de9 "latex"
-  "Report1.out" 1626715482 804 5356836684bbaca60f2243daef97deac "latex"
-  "Report1.tex" 1626715469 11334 657c2a6b4d252b8b2c532c7c592209fd ""
-  "Report1.toc" 1626715482 969 115addcdd78e7f49a6e6341b79fbf549 "latex"
+  "Report1.aux" 1626742832 2995 b952b1509bfad990627bdb50d2540ef8 "latex"
+  "Report1.out" 1626742832 804 5356836684bbaca60f2243daef97deac "latex"
+  "Report1.tex" 1626742826 12011 ce9456bdebb9df9ac599e30b73de0781 ""
+  "Report1.toc" 1626742832 970 ef095aebbf26105e4e280f1114fa8a20 "latex"
+  "img/minai.png" 1626694613 36859 082e4001620404215b3460fd5f13f00a ""
   "output/output.png" 1626695549 79396 34e27baa9bca0ebf6ffa49b823963091 ""
   "output/output_example_1.png" 1626714789 158421 e06f0f73b66d3e7ff77a259d85fc6344 ""
   (generated)
-  "Report1.aux"
-  "Report1.log"
   "Report1.toc"
+  "Report1.log"
+  "Report1.aux"
   "Report1.dvi"
   "Report1.out"

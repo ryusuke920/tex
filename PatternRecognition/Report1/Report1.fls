@@ -958,6 +958,10 @@ INPUT Report1.toc
 OUTPUT Report1.toc
 OUTPUT Report1.dvi
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-v.tfm
+INPUT /Users/ryusuke/Documents/git/tex/PatternRecognition/Report1/img/minai.png
+INPUT /Users/ryusuke/Documents/git/tex/PatternRecognition/Report1/img/minai.png
+INPUT /Users/ryusuke/Documents/git/tex/PatternRecognition/Report1/img/minai.png
+INPUT extractbb -B cropbox -O /Users/ryusuke/Documents/git/tex/PatternRecognition/Report1/img/minai.png
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-h.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr9.tfm

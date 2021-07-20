@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.11.27)  20 JUL 2021 02:24
+This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.11.27)  20 JUL 2021 10:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -738,34 +738,36 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
 (Font)              scaled to size 11.09619pt on input line 65.
  [2] [3]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 102.
+File: /Users/ryusuke/Documents/git/tex/PatternRecognition/Report1/img/minai.png Graphic file (type bmp)
+</Users/ryusuke/Documents/git/tex/PatternRecognition/Report1/img/minai.png>
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 109.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 102.
+(Font)              scaled to size 8.32214pt on input line 109.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 102.
+(Font)              scaled to size 8.32214pt on input line 109.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 103.
+(Font)              scaled to size 6.47278pt on input line 110.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 103.
+(Font)              scaled to size 8.32214pt on input line 110.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 103.
+(Font)              scaled to size 8.32214pt on input line 110.
  [4]
 File: /Users/ryusuke/Documents/git/tex/PatternRecognition/Report1/output/output_example_1.png Graphic file (type bmp)
 </Users/ryusuke/Documents/git/tex/PatternRecognition/Report1/output/output_example_1.png>
  [5] [6] [7]
 File: /Users/ryusuke/Documents/git/tex/PatternRecognition/Report1/output/output.png Graphic file (type bmp)
 </Users/ryusuke/Documents/git/tex/PatternRecognition/Report1/output/output.png>
- [8] [9] (./Report1.aux)
+ [8] [9] [10] (./Report1.aux)
 Package rerunfilecheck Info: File `Report1.out' has not changed.
 (rerunfilecheck)             Checksum: 5356836684BBACA60F2243DAEF97DEAC;804.
  ) 
 Here is how much of TeX's memory you used:
- 33693 strings out of 479950
- 798878 string characters out of 5884201
- 1574678 words of memory out of 5000000
- 50429 multiletter control sequences out of 15000+600000
+ 33699 strings out of 479950
+ 799274 string characters out of 5884201
+ 1470682 words of memory out of 5000000
+ 50432 multiletter control sequences out of 15000+600000
  558730 words of font info for 139 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  80i,11n,85p,411b,2421s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Report1.dvi (9 pages, 39828 bytes).
+Output written on Report1.dvi (10 pages, 41156 bytes).
