@@ -47,7 +47,7 @@ TeXのテンプレートや過去の製作物を載せています
 
 ## [ProbabilityTheoryReport](https://github.com/ryusuke920/tex/tree/main/ProbabilityTheoryReport) (2020/04~2020/08)
 2年前期の必修科目である確率論の講義後の最終課題が時間があったためTeXで作成した時のものです
-|File Name|Contents|PDF||TeX|
+|File Name|Contents|PDF|TeX|
 |:--:|:--:|:--:|:--:|
 |final|確率統計全般の問題|[解答PDF](https://github.com/ryusuke920/tex/blob/main/ProbabilityTheoryReport/final.pdf)|[解答TeX](https://github.com/ryusuke920/tex/blob/main/ProbabilityTheoryReport/final.tex)|
 
