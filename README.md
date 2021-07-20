@@ -8,7 +8,7 @@ TeXのテンプレートや過去の製作物を載せています
 4. [PatternRecognition](https://github.com/ryusuke920/tex/tree/main/PatternRecognition)
 
 
-## [DifferentialEquation](https://github.com/ryusuke920/tex/tree/main/DifferentialEquation)
+## [DifferentialEquation](https://github.com/ryusuke920/tex/tree/main/DifferentialEquation) (2021/03~2021/04)
 2年後期の必修科目である微分方程式の講義後に習った内容を忘れないよう自作問題を作成し、春休みに毎日解くための問題です  
 （基本的には）だんだん難易度が上がっていくように作成してあります
 
@@ -26,7 +26,7 @@ TeXのテンプレートや過去の製作物を載せています
 |day_09|対角化を用いた連立微分方程式|[問題PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_9.pdf)|[解答PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_9.pdf)|[問題TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_9.tex)|[解答TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_9.tex)|
 |day_10|微分演算子を用いた初等演算子法|[問題PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_10.pdf)|[解答PDF](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_10.pdf)|[問題TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/problem/day_10.tex)|[解答TeX](https://github.com/ryusuke920/tex/blob/main/DifferentialEquation/answer/day_10.tex)|
 
-## [SystemMathematics](https://github.com/ryusuke920/tex/tree/main/SystemMathematics)
+## [SystemMathematics](https://github.com/ryusuke920/tex/tree/main/SystemMathematics) (2020/07~2020/08)
 2年前期の必修科目である確率論, システム数学基礎の講義後に習った内容を忘れないよう自作問題を作成し、夏休みに毎日解くための問題です  
 （基本的には）だんだん難易度が上がっていくように作成してあります
 
@@ -45,10 +45,13 @@ TeXのテンプレートや過去の製作物を載せています
 |day_10|複雑な重積分|[問題PDF](https://github.com/ryusuke920/tex/blob/main/SystemMathematics/problem/PDF/day_10.pdf)|[問題TeX](https://github.com/ryusuke920/tex/blob/main/SystemMathematics/problem/TeX/day_10.tex)|[解答PDF](https://github.com/ryusuke920/tex/blob/main/SystemMathematics/answer/PDF/day_10.pdf)|[解答TeX](https://github.com/ryusuke920/tex/blob/main/SystemMathematics/answer/TeX/day_10.tex)|
 |day_11|工夫して簡単にする積分|[問題PDF](https://github.com/ryusuke920/tex/blob/main/SystemMathematics/problem/PDF/day_11.pdf)|[問題TeX](https://github.com/ryusuke920/tex/blob/main/SystemMathematics/problem/TeX/day_11.tex)|[解答PDF](https://github.com/ryusuke920/tex/blob/main/SystemMathematics/answer/PDF/day_11.pdf)|[解答TeX](https://github.com/ryusuke920/tex/blob/main/SystemMathematics/answer/TeX/day_11.tex)|
 
-## [ProbabilityTheoryReport](https://github.com/ryusuke920/tex/tree/main/ProbabilityTheoryReport)
+## [ProbabilityTheoryReport](https://github.com/ryusuke920/tex/tree/main/ProbabilityTheoryReport) (2020/04~2020/08)
 2年前期の必修科目である確率論の講義後の最終課題が時間があったためTeXで作成した時のものです
+|File Name|Contents|PDF||TeX|
+|:--:|:--:|:--:|:--:|
+|final|確率統計全般の問題|[解答PDF](https://github.com/ryusuke920/tex/blob/main/ProbabilityTheoryReport/final.pdf)|[解答TeX](https://github.com/ryusuke920/tex/blob/main/ProbabilityTheoryReport/final.tex)|
 
-## [PatternRecognition](https://github.com/ryusuke920/tex/tree/main/PatternRecognition)
+## [PatternRecognition](https://github.com/ryusuke920/tex/tree/main/PatternRecognition) (2021/07)
 3年前期のパターン認識の講義のレポート課題を執筆しました。  
 DCT係数を求めたり、画像の復元を行なっています。
 
