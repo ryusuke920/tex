@@ -5,9 +5,10 @@ TeXのテンプレートや過去の製作物を載せています
 - [DifferentialEquation](https://github.com/ryusuke920/tex/tree/main/DifferentialEquation)
 - [SystemMathematics](https://github.com/ryusuke920/tex/tree/main/SystemMathematics)
 - [ProbabilityTheoryReport](https://github.com/ryusuke920/tex/tree/main/ProbabilityTheoryReport)
-- [高校数学](https://github.com/ryusuke920/tex/tree/main/%E9%AB%98%E6%A0%A1%E6%95%B0%E5%AD%A6)
+- [PatternRecognition](https://github.com/ryusuke920/tex/tree/main/PatternRecognition)
 
-## DifferentialEquation
+
+## [DifferentialEquation](https://github.com/ryusuke920/tex/tree/main/DifferentialEquation)
 2年後期の必修科目である微分方程式の講義後に習った内容を忘れないよう自作問題を作成し、春休みに毎日解くための問題です  
 （基本的には）だんだん難易度が上がっていくように作成してあります
 
@@ -53,7 +54,7 @@ TeXのテンプレートや過去の製作物を載せています
 &ensp; [問題](https://github.com/ryusuke920/tex/blob/main/%E6%AF%8E%E6%97%A5%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F/problem/day_10.pdf)
 &ensp; [解答](https://github.com/ryusuke920/tex/blob/main/%E6%AF%8E%E6%97%A5%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F/answer/day_10.pdf)
 
-## SystemMathematics
+## [SystemMathematics](https://github.com/ryusuke920/tex/tree/main/SystemMathematics)
 2年前期の必修科目である確率論, システム数学基礎の講義後に習った内容を忘れないよう自作問題を作成し、夏休みに毎日解くための問題です  
 （基本的には）だんだん難易度が上がっていくように作成してあります
 
@@ -72,13 +73,23 @@ TeXのテンプレートや過去の製作物を載せています
 |day_10|複雑な重積分|[問題PDF](https://github.com/ryusuke920/tex/blob/main/SystemMathematics/problem/PDF/day_10.pdf)|[問題TeX](https://github.com/ryusuke920/tex/blob/main/SystemMathematics/problem/TeX/day_10.tex)|[解答PDF](https://github.com/ryusuke920/tex/blob/main/SystemMathematics/answer/PDF/day_10.pdf)|[解答TeX](https://github.com/ryusuke920/tex/blob/main/SystemMathematics/answer/TeX/day_10.tex)|
 |day_11|工夫して簡単にする積分|[問題PDF](https://github.com/ryusuke920/tex/blob/main/SystemMathematics/problem/PDF/day_11.pdf)|[問題TeX](https://github.com/ryusuke920/tex/blob/main/SystemMathematics/problem/TeX/day_11.tex)|[解答PDF](https://github.com/ryusuke920/tex/blob/main/SystemMathematics/answer/PDF/day_11.pdf)|[解答TeX](https://github.com/ryusuke920/tex/blob/main/SystemMathematics/answer/TeX/day_11.tex)|
 
-## ProbabilityTheoryReport
+## [ProbabilityTheoryReport](https://github.com/ryusuke920/tex/tree/main/ProbabilityTheoryReport)
 2年前期の必修科目である確率論の講義後の最終課題が時間があったためTeXで作成した時のものです
 
-## 高校数学
-TeXの使い方に慣れる一環として、高校数学の公式やその証明をまとめています（進行途中）
+## [PatternRecognition](https://github.com/ryusuke920/tex/tree/main/PatternRecognition)
+3年前期のパターン認識の講義のレポート課題を執筆しました。  
+DCT係数を求めたり、画像の復元を行なっています。
+
+### 内容
+|File Name|Contents|PDF|TeX|
+|:--:|:--:|:--:|:--:|
+|Report1|顔画像を認識し、DCT係数を求める|||
+
 
 ## qexam
 試験問題のように作成したい時に必要なモジュールが入っています  
 
-別途何かありましたらご連絡お願いします
+別途何かありましたら下記のいずれかの連絡先にてご連絡お願いします
+* Mail: ryusuke_920@icloud.com
+* TwitterのDM: [ryusuke__h](https://twitter.com/ryusuke__h)
+* issueを上げる
