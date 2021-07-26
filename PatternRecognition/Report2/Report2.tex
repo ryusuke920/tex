@@ -1,0 +1,166 @@
+\documentclass[dvipdfmx,uplatex]{jsarticle}
+\def\vector#1{\mbox{\boldmath $#1$}}
+\usepackage{qexam} % 問題を書く時とかに必要なやつ
+\usepackage{setspace} % 行間開けるのに必要なやつ
+\usepackage{amsmath} % 数学やるのに必要なやつ
+\usepackage{bm} % 太字にするのに必要なやつ
+\usepackage{amssymb}
+% 画像を取り込むときに必要なやつ
+\usepackage[dvipdfmx]{graphicx}
+%\begin{figure}[htbp]
+%\begin{center}
+%\includegraphics[width=10cm]{フルパス}
+%\caption{浜辺美波}
+%\end{center}
+%\end{figure}
+
+\usepackage{ascmac}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{braket}
+\usepackage[colorlinks=true, bookmarks=true,
+bookmarksnumbered = true, bookmarkstype = toc, linkcolor = black,
+urlcolor=black, citecolor=black]{hyperref}
+\usepackage{listings,jvlisting} % 日本語のコメントアウトをする場合jvlisting（もしくはjlisting）が必要
+\lstset{
+  basicstyle={\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\smallitshape},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  xrightmargin=0zw,
+  xleftmargin=3zw,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1zw,
+  lineskip=-0.5ex
+}%ここまでがプログラムのソースコードを貼るのに必要なやつ
+\makeatletter
+ \renewcommand{\theequation}{
+   \thesubsection.\arabic{equation}}
+  \@addtoreset{equation}{subsection}
+\title{パターン認識　レポート２}
+\author{1019163　日置竜輔 \thanks{公立はこだて未来大学　システム情報科学部　複雑系知能学科　複雑系コース　B3}}
+\date{\today}
+
+\begin{document}
+\begin{spacing}{1.4}
+
+\maketitle
+
+今回はwekaを使ってスポーツをする人に身長と運動の好き嫌いが関係してるかを調べるために、以下のモデルを作成した。\\
+
+\begin{lstlisting}[caption=今回wekaを用いて3*3で学習させるモデル]
+@relation play-sports
+
+@attribute height {high, medium, low}
+@attribute like {like, soso, dislike}
+@attribute play-sports {-1, 1}
+
+@data
+high, like, 1
+high, soso, 1
+high, dislike, -1
+medium, like, 1
+medium, soso, -1
+medium, dislike, -1
+low, like, 1
+low, soso, -1
+low, dislike, -1
+\end{lstlisting}
+
+@attribute height は身長が「高い・平均・低い」の３段階で判断し、\\
+@attribute like は運動が「好き・どちらでもない・嫌い」の３段階で判断し\\
+@attribute play-sports で$-1$ならば運動が嫌い、$1$ならば運動が好きというモデルを作成した。\\
+
+\newpage
+
+@data は例えば、１行目は身長が高く、運動が好きならばスポーツをしている、９行目は身長が低く、運動が嫌いならばスポーツをしていないといったモデルを作成した。\\
+
+wekaを用いて上記のデータを学習を行った結果、以下の結果が得られた。
+\begin{lstlisting}[caption=wekaを用いて上記のデータを学習させた結果]
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 2 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.NormalizedPolyKernel -E 3.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     play-sports
+Instances:    9
+Attributes:   3
+              height
+              like
+              play-sports
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Normalized Poly Kernel: K(x,y) = <x,y>^3.0/(<x,x>^3.0*<y,y>^3.0)^(1/2)
+
+Classifier for classes: -1, 1
+
+BinarySMO
+
+      0.922  * <1 0 0 1 0 0 > * X]
+ +       1      * <0 0 1 1 0 0 > * X]
+ -       0.6378 * <0 1 0 0 0 1 > * X]
+ +       1      * <0 1 0 1 0 0 > * X]
+ -       0.6393 * <0 0 1 0 0 1 > * X]
+ -       0.8757 * <0 0 1 0 1 0 > * X]
+ -       0.8747 * <0 1 0 0 1 0 > * X]
+ -       0.8945 * <1 0 0 0 0 1 > * X]
+ +       1      * <1 0 0 0 1 0 > * X]
+ -       0.1854
+
+Number of support vectors: 9
+
+Number of kernel evaluations: 45 (96.815% cached)
+
+
+
+Time taken to build model: 0.03 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances           9              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1
+Mean absolute error                      0
+Root mean squared error                  0
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances                9
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     -1
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     1
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 5 0 | a = -1
+ 0 4 | b = 1
+\end{lstlisting}
+
+14-17行目では３次の多項式カーネルを利用していることが確認でき、23-32行目で実行結果が正確に得られていることが確認できた。\\
+
+wekaを使用すると、モデルを作成することによってしっかりとした結果が具体的に得られることがわかった。\\
+しかし、今回は作成したモデルが少なかったため、さらにデータを学習させれば精度の高い結果が得られるのではないかと考えた。
+
+\end{spacing}
+\end{document}
