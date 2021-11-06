@@ -1,0 +1,215 @@
+\documentclass[dvipdfmx,uplatex]{jsarticle}
+\def\vector#1{\mbox{\boldmath $#1$}}
+\usepackage{qexam} % 問題を書く時とかに役に立つ
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[hiresbb]{graphicx}
+\usepackage{ascmac}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{braket}
+\usepackage[colorlinks=true, bookmarks=true,
+bookmarksnumbered = true, bookmarkstype = toc, linkcolor = black,
+urlcolor=black, citecolor=black]{hyperref}
+\usepackage[version=3]{mhchem}
+\usepackage{listings, jvlisting} % 日本語のコメントアウトをする場合jvlisting（もしくはjlisting）が必要
+\lstset{
+  basicstyle={\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\smallitshape},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  xrightmargin=0zw,
+  xleftmargin=3zw,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1zw,
+  lineskip=-0.5ex
+}%ここまでがプログラムのソースコードを貼るのに必要なやつ
+
+\makeatletter
+ \renewcommand{\theequation}{
+   \thesubsection.\arabic{equation}}
+  \@addtoreset{equation}{subsection}
+\title{複雑系科学演習　レポート}
+\author{公立はこだて未来大学　システム情報科学部　B3　日置竜輔}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents %目次
+
+\newpage
+
+\section{複雑系科学演習：レポート課題1}
+
+\question{課題 1}
+  ロジスティック写像の時系列変化を計算するプログラムを作成し、$r = 1.50$, $r = 2.60$, $r = 3.20$, $r = 3.50$, $r = 3.86$, $r = 3.90$ のとき、$x_{0} = 0.7$ として個体数変動の時系列グラフを表示せよ。\\
+
+\question{課題 2}
+ ロジスティック写像のリターンマップを描くためのプログラムを作成し、$r = 1.50$, $r = 2.60$, $r = 3.20$, $r = 3.50$, $r = 3.86$, $r = 3.90$ のとき、$x_{0} = 0.7$ として個体数変動のリターンマッ プを表示せよ。\\
+ グラフには、$x_{n+1} = r(1 − x_{n})x_{n} と x_{n+1} = x_{n}$ のグラフも表示すること。\\
+
+コードは以下のようになる。
+\begin{lstlisting}[caption=Pythonによるロジスティック写像の描画]
+"""
+from matplotlib import pyplot as plt
+from copy import copy
+from collections import deque
+
+class LogisticMap:
+    def __init__(self, start: float, constant: float, number: int, problem_number: int):
+        self.num = [i for i in range(number)]
+        tmp = start
+        self.n = deque([(tmp := constant * tmp * (1 - tmp)) for _ in self.num])
+        self.n.appendleft(start)
+        self.n.pop()
+        self.n = list(self.n)
+        self.problem_number = problem_number
+
+        x, y = copy(self.n), copy(self.n)
+        x.pop()
+        y.pop(0)
+        self.x = x
+        self.y = y
+
+    # 時系列グラフ
+    def time_series_graph(self):
+        fig = plt.figure()
+        plt.plot(self.num, self.n, marker="o", color="red", linestyle="--")
+        plt.xlabel("n",fontsize=14)
+        plt.ylabel("Xn",fontsize=14)
+        plt.xlim(0.0, max(self.num) * 1.1)
+        plt.ylim(0.0, max(self.n) * 1.1)
+        plt.savefig(f"/Users/ryusuke/Documents/git/FutureUniversityHakodate/ComplexScienceExercise/result/week01_時系列グラフ_{self.problem_number}.png")
+        plt.close(fig)
+
+    # リターンマップ
+    def return_map(self):
+        fig = plt.figure()
+        plt.plot(self.x, self.y, marker="o", color="blue", linestyle="None")
+        plt.xlabel("Xn",fontsize=14)
+        plt.ylabel("Xn+1",fontsize=14)
+        plt.xlim(0.0, max(self.x) * 1.1)
+        plt.ylim(0.0, max(self.y) * 1.1)
+        plt.savefig(f"/Users/ryusuke/Documents/git/FutureUniversityHakodate/ComplexScienceExercise/result/week01_リターンマップ_{self.problem_number}.png")
+        plt.close(fig)
+
+l1 = LogisticMap(0.7, 1.5, 100, 1)
+l1.return_map()
+l1.time_series_graph()
+\end{lstlisting}
+
+\newpage
+
+\section{複雑系科学演習：レポート課題2}
+
+\question{課題 1}
+  ロジスティック写像で$r = 1.50$, $r = 2.60$, $r = 3.20$, $r = 3.50$, $r = 3.86$, $r = 3.90$として、初期値 $x_{0}$ を $0$ から $1$ まで $0.001$きざみで変化させたときの、$x_{200}$ の値がどうなっているかグラフ化せよ。\\
+また、$x_{n}$ が $150 < n < 200$ の場合もグラフ化せよ。出力形式は授業資料を参照すること。
+
+\question{課題 2}
+  課題 1 で得られた結果から初期値鋭敏性を説明せよ。
+
+\begin{lstlisting}[caption=Pythonによるロジスティック写像の描画]
+import numpy as np
+from matplotlib import pyplot as plt
+
+class LogisticMap:
+    def __init__(self, constant: float, problem_number: int) -> None:
+        self.r = constant
+        self.x = np.linspace(0, 1, 1000)
+        self.problem_number = problem_number
+        fig = plt.figure(figsize=(12, 6))
+        plt.rcParams['font.family'] = 'AppleGothic'
+        self.ax1 = fig.add_subplot(1, 2, 1)
+        self.ax2 = fig.add_subplot(1, 2, 2)
+
+    def code_problem1(self) -> None:
+        ax1_array = []
+        for i in self.x:
+            num = i
+            for _ in range(200):
+                num = self.r * num * (1 - num)
+            ax1_array.append(num)
+        self.ax1.set_xlabel('$x_0$')
+        self.ax1.set_ylabel('$x_{200}$')
+        self.ax1.set_title(f'r={constant}, X_0とX_200 の関係式')
+        self.ax1.plot(self.x, ax1_array, marker='.', linestyle='None')
+
+    def code_problem2(self) -> None:
+        ax2_array = []
+        x_array = []
+        for i in self.x:
+            num = i
+            for j in range(200):
+                num = self.r * num * (1 - num)
+                if 150 <= j:
+                    ax2_array.append(num)
+                    x_array.append(i)
+        self.ax2.set_xlabel('$x_0$')
+        self.ax2.set_ylabel('$x_{i}:(150 < i < 200)$')
+        self.ax2.set_title(f'r={constant}, X_150 ~ X_200 の関係式')
+        self.ax2.plot(x_array, ax2_array, marker='.', linestyle='None')
+
+    def show_graph(self) -> None:
+        plt.grid()
+        plt.savefig(f"/Users/ryusuke/Documents/git/FutureUniversityHakodate/ComplexScienceExercise/result/week02_{self.problem_number}.png")
+
+r = [1.50, 2.60, 3.20, 3.50, 3.86, 3.90]
+
+for index, constant in enumerate(r):
+    Log = LogisticMap(constant, index)
+    Log.code_problem1()
+    Log.code_problem2()
+    Log.show_graph()
+\end{lstlisting}
+
+\newpage
+
+\section{複雑系科学演習：レポート課題3}
+
+\question{課題 1}
+　ロジスティク写像の初期変動の影響がないリターンマップを描くためのプログラムを作成し、個体数変動のリターンマップを表示せよ。\\
+このとき、$r$ は、$r = 1.50$, $r = 2.60$, $r = 3.20$, $r = 3.50$, $r = 3.86$, $r = 3.90$ のとし、初期値 $x_{0}$ はランダムに与えなさい。\\
+グラフは、授業資料を参考として、 $x_{n+1} = r(1 − x_{n})x_{n}$, $x_{n+1} = x_{n}$ も同時に描画し、縦軸と横軸は $0$～$1$ の範囲で出力すること。\\
+
+
+\question{課題 2}
+  $r$ が $1$～$4$ のときのロジスティク写像の分岐図を描け。また、分岐図の中で 3周期の窓が現れている $r$ の範囲を抽出して、グラフを描け。\\
+このとき、両グラフとも $r$ は各自適切な刻み幅を設定し、各 $r$ について初期値 $x_{0}$ をランダムに与えること。\\
+プログラムのソースコードは、$r$ が $1$～$4$ のときの分岐図を出力するものと 3周期の窓を出力するものとの 2 つを記載すること。\\
+
+\question{課題 3}
+  課題 1 と課題 2 は、各 $r$ ごとに初期値 $x_{0}$ をランダムに与えているにもかかわらず、$r$ が $1$～$3.5$ くらいまでは何度プログラムを実行しても同じようなグラフを描くことができる。\\
+一方、$r$ が 3.5 よりも大きくなっていくと、プログラムを実行するたびにグラフを一見するだけではわからないような違いが生じる。\\
+この理由を前回の課題と初期値鋭敏性という言葉とを用いて説明せよ。\\
+
+\section{複雑系科学演習：レポート課題4}
+
+\question{課題 1}
+　リアプノフ指数の $r$ 依存性を示したグラフを描け。\\
+但し、初期値をランダムに与え、グラフの横軸は $1$～$4$、縦軸は$-3$～$1$ までの範囲にすること。\\
+$r$ の刻み幅は、各自適切な値を設定すること。\\
+
+\question{課題 2}
+  3 周期の窓の領域でのリアプノフ指数の $r$ 依存性を示したグラフを描け。\\
+但し、初期値をランダムに与え、グラフの縦軸は$-1$～$0.4$ までの範囲にすること。\\
+$r$ の範囲および刻み幅は、各自適切な値を設定すること。\\
+
+\question{課題 3}
+  ロジスティック写像についてまとめ、これまでに出題された全て ($4$ 回分) の結果について考察せよ。\\
+分量は $A4$ 用紙 $1$～$4$ 枚程度を目安としてください。\\
+
+\question{その他}
+$4$ 回分の講義についての感想・意見等があれば、書いてください。(採点対象ではありません。)\\
+
+\end{document}
