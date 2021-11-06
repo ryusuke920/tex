@@ -1,0 +1,16 @@
+@relation play-sports
+
+@attribute height {high, medium, low}
+@attribute like {like, soso, dislike}
+@attribute play-sports {-1, 1}
+
+@data
+high, like, 1
+high, soso, 1
+high, dislike, -1
+medium, like, 1
+medium, soso, -1
+medium, dislike, -1
+low, like, 1
+low, soso, -1
+low, dislike, -1
