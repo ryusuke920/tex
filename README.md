@@ -2,11 +2,19 @@
 TeXのテンプレートや過去の製作物を載せています
 
 # 目次
-1. [DifferentialEquation](https://github.com/ryusuke920/tex/tree/main/DifferentialEquation)
-2. [SystemMathematics](https://github.com/ryusuke920/tex/tree/main/SystemMathematics)
-3. [ProbabilityTheoryReport](https://github.com/ryusuke920/tex/tree/main/ProbabilityTheoryReport)
-4. [PatternRecognition](https://github.com/ryusuke920/tex/tree/main/PatternRecognition)
+1. [ComplexScienceExercise](https://github.com/ryusuke920/tex/blob/main/ComplexScienceExercise)
+2. [DifferentialEquation](https://github.com/ryusuke920/tex/tree/main/DifferentialEquation)
+3. [SystemMathematics](https://github.com/ryusuke920/tex/tree/main/SystemMathematics)
+4. [ProbabilityTheoryReport](https://github.com/ryusuke920/tex/tree/main/ProbabilityTheoryReport)
+5. [PatternRecognition](https://github.com/ryusuke920/tex/tree/main/PatternRecognition)
 
+## [ComplexScienceExercise](https://github.com/ryusuke920/tex/blob/main/ComplexScienceExercise) (2021/09~2021/11)
+3年後期の必修科目である複雑系科学演習のレポートを作成したときのものです
+
+### 内容
+|Name|Contents|PDF|TeX|
+|:--:|:--:|:--:|:--:|
+|中間レポート|ロジスティック写像についての第１回〜第５回までのレポート|[PDF](https://github.com/ryusuke920/tex/blob/main/ComplexScienceExercise/middle_report.pdf)|[TeX](https://github.com/ryusuke920/tex/blob/main/ComplexScienceExercise/middle_report.tex)| 
 
 ## [DifferentialEquation](https://github.com/ryusuke920/tex/tree/main/DifferentialEquation) (2021/03~2021/04)
 2年後期の必修科目である微分方程式の講義後に習った内容を忘れないよう自作問題を作成し、春休みに毎日解くための問題です  
