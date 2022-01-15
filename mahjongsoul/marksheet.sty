@@ -1,0 +1,45 @@
+%
+% marksheet.sty
+%
+% 使用例:
+% \usepackage{marksheet}
+%
+% $(x+1)(x-10) = 0 \Leftrightarrow x= \markbox[label]{2}, \markbox[label2]{2}$である．
+%
+% ただし $\refhosomarkbox[label]{2} < \refhosomarkbox[label2]{2}.$
+%
+% また $2^{\refhososemamarkbox[label]{2}} = \frac{\markbox{1}}{\markbox{1}}, 2^{\refhososemamarkbox[label2]{2}} = \markbox{4}$である．
+%
+
+\usepackage{ifthen}
+
+\def\@katakana#1{\ifcase#1 京\or ア\or イ\or ウ\or エ\or オ\or カ\or キ\or ク\or ケ\or コ\or サ\or シ\or ス\or セ\or ソ\or タ\or チ\or ツ\or テ\or ト\or ナ\or ニ\or ヌ\or ネ\or ノ\or ハ\or ヒ\or フ\or ヘ\or ホ\or マ\or ミ\or ム\or メ\or モ\or ヤ\or ユ\or ヨ\or ラ\or リ\or ル\or レ\or ロ\or ワ\or ヲ\or ン\else\@ctrerr\fi}
+
+\def\katakana#1{\expandafter\@katakana\csname c@#1\endcsname}%アイウエオ
+
+\newcounter{countermark}
+\setcounter{countermark}{0}
+\newcounter{tempcountermark}
+\setcounter{tempcountermark}{0}
+\newcounter{itermark}
+\setcounter{itermark}{0}
+
+\newcommand{\resetmark}[0]{\setcounter{countermark}{0}}
+
+\newcommand{\markboxletter}[2][]{\refstepcounter{countermark}\ifx{#1}{}{}\else{\label{#1}}\fi\katakana{countermark}\setcounter{itermark}{1}\whiledo{\value{itermark}<#2}{\refstepcounter{countermark}\katakana{countermark}\addtocounter{itermark}{1}}}
+
+\newcommand{\refmarkboxletter}[2][]{\setcounter{tempcountermark}{\ref{#1}}\setcounter{itermark}{0}\whiledo{\value{itermark}<#2}{\katakana{tempcountermark}\refstepcounter{tempcountermark}\addtocounter{itermark}{1}}}
+
+\newcommand{\waku}[1]{\fboxrule=1.0pt \fboxsep=2.1pt \fbox{\ \bf{#1}\ }}
+\newcommand{\hosowaku}[1]{\fboxrule=0.5pt \fboxsep=2.5pt \fbox{\ {#1}\ }}
+\newcommand{\semawaku}[1]{\fboxrule=1.0pt \fboxsep=0.8pt \fbox{\bf{#1}}}
+\newcommand{\hososemawaku}[1]{\fboxrule=0.5pt \fboxsep=1.0pt \fbox{#1}}
+
+\newcommand{\markbox}[2][]{\waku{\markboxletter[#1]{#2}}}
+\newcommand{\refmarkbox}[2][]{\waku{\refmarkboxletter[#1]{#2}}}
+\newcommand{\hosomarkbox}[2][]{\hosowaku{\markboxletter[#1]{#2}}}
+\newcommand{\refhosomarkbox}[2][]{\hosowaku{\refmarkboxletter[#1]{#2}}}
+\newcommand{\semamarkbox}[2][]{\semawaku{\markboxletter[#1]{#2}}}
+\newcommand{\refsemamarkbox}[2][]{\semawaku{\refmarkboxletter[#1]{#2}}}
+\newcommand{\hososemamarkbox}[2][]{\hososemawaku{\markboxletter[#1]{#2}}}
+\newcommand{\refhososemamarkbox}[2][]{\hososemawaku{\refmarkboxletter[#1]{#2}}}
