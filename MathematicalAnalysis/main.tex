@@ -1,0 +1,237 @@
+\documentclass[a4j]{jsarticle}
+\def\vector#1{\mbox{\boldmath $#1$}}
+\usepackage{qexam} % 問題を書く時とかに必要なやつ
+\usepackage{setspace} % 行間開けるのに必要なやつ
+\usepackage{amsmath} % 数学やるのに必要なやつ
+\usepackage{amssymb}
+\usepackage[hiresbb]{graphicx}
+\usepackage{ascmac}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{braket}
+\newcommand{\ctext}[1]{\raise0.2ex\hbox{\textcircled{\scriptsize{#1}}}} % ①などを表示するスクリプト https://livingdead0812.hatenablog.com/entry/20161005/1475654232
+\usepackage[colorlinks=true, bookmarks=true,
+bookmarksnumbered = true, bookmarkstype = toc, linkcolor = blue,
+urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[version=3]{mhchem}
+\makeatletter
+ \renewcommand{\theequation}{
+   \thesubsection.\arabic{equation}}
+  \@addtoreset{equation}{subsection}
+
+\title{解析学II 期末テスト対策}
+\author{ryusuke\_h\thanks{Future University Hakodate M2}}
+\date{\today}
+
+\begin{document}
+    \maketitle
+
+    \question{問10}
+    $n = 0,1,2,\dots$ とする。$\displaystyle \int_{0}^{1} \left(1 - x^2 \right)^{\frac{n}{2}} dx$ を置換積分 $(x = \sin t)$ で求めよ。 \\ \\
+
+    $x = \sin t$ より $dx = \cos t dt$ であり、$x$ が $0 \rightarrow 1$ の時 $t$ は $\displaystyle 0 \rightarrow \frac{\pi}{2}$ であるから、
+    \begin{align*}
+        \int_{0}^{1} \left(1 - x^2 \right)^{\frac{n}{2}} dx &= \int_{0}^{\frac{\pi}{2}} \left(1 - \sin^2t \right)^{\frac{n}{2}}\cos t dt \\
+        &= \int_{0}^{\frac{\pi}{2}} \left(\cos^2t \right)^{\frac{n}{2}}\cos t dt \\
+        &= \int_{0}^{\frac{\pi}{2}} \cos^{n + 1}t dt
+    \end{align*}
+
+    ここで、$\displaystyle \mathrm{I_n} = \int_{0}^{\frac{\pi}{2}} \cos^n t dt$ とする。
+
+    \begin{align*}
+        \mathrm{I_n} &= \int_{0}^{\frac{\pi}{2}} \left(\cos^{n - 1} t\right)\cos t dt \\
+        &= \int_{0}^{\frac{\pi}{2}} \left(\cos^{n - 1} t\right)\left(\sin t\right)^{\prime} dt \\
+        &= \left[\sin t \cos^{n - 1} t\right]_{0}^{\frac{\pi}{2}} + (n - 1) \int_{0}^{\frac{\pi}{2}} \cos^{n - 2}t \sin^2t dt \\
+        &= 0 + (n - 1) \int_{0}^{\frac{\pi}{2}} \cos^{n - 2}t \left(1 - \cos^2 t\right) dt \\
+        &= (n - 1)(\mathrm{I_{n - 2}} - \mathrm{I_n})
+    \end{align*}
+
+    したがって、$\displaystyle n \mathrm{I_n} = (n - 1)\mathrm{I_{n - 2}}$ であるから、$\displaystyle \mathrm{I_n} = \frac{n - 1}{n}\mathrm{I_{n - 2}}$ となる。
+
+    \begin{align*}
+        \int_{0}^{\frac{\pi}{2}} \cos^{n+1}tdt &= \mathrm{I_{n + 1}} \\
+        &= \frac{n}{n + 1}\mathrm{I_{n - 1}} \\
+        &= \frac{n}{n + 1} \frac{n - 2}{n - 1} \mathrm{I_{n - 3}} \\
+        &= \frac{n}{n + 1} \frac{n - 2}{n - 1} \frac{n - 4}{n - 3} \mathrm{I_{n - 5}} \\
+        &= \dots \\
+    \end{align*}
+
+    $\displaystyle \mathrm{I_0} = \int_{0}^{\frac{\pi}{2}}dt = \frac{\pi}{2}, \: \mathrm{I_1} = \int_{0}^{\frac{\pi}{2}} \cos tdt = 1$ であることを踏まえると、
+
+    \begin{align*}
+        \int_{0}^{1} \left(1 - x^2\right)^{\frac{n}{2}}dx &= \int_{0}^{\frac{\pi}{2}} \cos^{n + 1}tdt \\
+        &= \mathrm{I_{n + 1}} \\
+        &=
+        \begin{cases}
+          \dfrac{n!!}{(n + 1)!!}\dfrac{\pi}{2} & \mathrm{nが奇数} \\
+          \dfrac{n!!}{(n + 1)!!} & \mathrm{nが偶数}
+        \end{cases}
+    \end{align*}
+
+    \question{問11}
+    関数 $\displaystyle f$ は $\displaystyle \left[0, 1\right]$ で連続としてつぎを示せ。
+    \begin{equation*}
+        \int_{0}^{\frac{\pi}{2}} f(\cos x)dx = \int_{0}^{\frac{\pi}{2}} f(\sin x)dx = \frac{1}{2} \int_{0}^{\pi}f(\sin x)dx = \frac{1}{\pi} \int_{0}^{\pi}xf(\sin x)dx
+    \end{equation*} \\
+
+    \begin{align*}
+        \int_{0}^{\frac{\pi}{2}} f(\cos x)dx = \int_{0}^{\frac{\pi}{2}} f \left\{ \sin \left(\frac{\pi}{2} - x\right) \right\} dx
+    \end{align*}
+
+    $\displaystyle \frac{\pi}{2} - x = t$ とすると $\displaystyle -dx = dt$、$\displaystyle x$ が $\displaystyle 0 \rightarrow \frac{\pi}{2}$ の時 $\displaystyle t$ は $\displaystyle \frac{\pi}{2} \rightarrow 0$ であるから、
+
+    \begin{align*}
+        \int_{0}^{\frac{\pi}{2}} f(\cos x)dx &= \int_{0}^{\frac{\pi}{2}} f \left\{ \sin \left(\frac{\pi}{2} - x\right) \right\} dx \\
+        &= -\int_{\frac{\pi}{2}}^{0} f(\sin t) dt \\
+        &= \int_{0}^{\frac{\pi}{2}} f(\sin t)dt \\
+        &= \int_{0}^{\frac{\pi}{2}} f(\sin x)dx \dots \ctext{1}
+    \end{align*}
+
+    \begin{equation*}
+        \int_{0}^{\pi} f(\sin x)dx = \int_{0}^{\frac{\pi}{2}} f(\sin x)dx + \int_{\frac{\pi}{2}}^{\pi} f(\sin x)dx
+    \end{equation*}
+
+    ここで $\displaystyle \int_{\frac{\pi}{2}}^{\pi} f(\sin x) dx = \int_{\frac{\pi}{2}}^{\pi} f \left\{ \cos\left(x - \frac{\pi}{2}\right) \right\}$ であるから $\displaystyle x - \frac{\pi}{2} = t$ とすると
+    $\displaystyle dx = dt$ であり、$\displaystyle x$ が $\displaystyle \frac{\pi}{2} \rightarrow \pi$ の時 $\displaystyle t$ は $\displaystyle 0 \rightarrow \frac{\pi}{2}$ であるから、
+
+    \begin{align*}
+        \int_{\frac{\pi}{2}}^{\pi} f(\sin x)dx &= \int_{0}^{\frac{\pi}{2}} f(\cos t)dt \\
+        &= \int_{0}^{\frac{\pi}{2}} f(\sin t) dt \\
+    \end{align*}
+
+    したがって $ \displaystyle \int_{0}^{\pi} f(\sin x)dx = \int_{0}^{\frac{\pi}{2}} f(\sin x)dx + \int_{0}^{\frac{\pi}{2}} f(\sin x)dx = 2 \int_{0}^{\frac{\pi}{2}} f(\sin x)dx $ が得られるので、
+
+    \begin{equation*}
+        \int_{0}^{\frac{\pi}{2}} f(\sin x)dx = \frac{1}{2} \int_{0}^{\pi} f(\sin x)dx \dots \ctext{2}
+    \end{equation*}
+
+    $\displaystyle \int_{0}^{\pi} x f(\sin x)dx = \int_{0}^{\pi} xf\left\{ \sin \left(\pi - x \right) \right\} dx$ より $\displaystyle \pi - x = t$ とすると、
+    $\displaystyle -dx = dt$ であり、$\displaystyle x$ が $\displaystyle 0 \rightarrow \pi$ の時 $\displaystyle t$ は $\displaystyle \pi \rightarrow 0$ であるから、
+
+    \begin{align*}
+        \int_{0}^{\pi} xf(\sin x)dx &= -\int_{\pi}^{0} (\pi - t)f(\sin t)dt \\
+        &= \int_{0}^{\pi} (\pi - t)f(\sin t)dt \\
+        &= \int_{0}^{\pi} (\pi - x)f(\sin x)dx
+    \end{align*}
+
+    したがって $\displaystyle 2\int_{0}^{\pi} xf(\sin x)dx = \pi \int_{0}^{\pi} f(\sin x)dx$ より、
+
+    \begin{equation*}
+        \frac{1}{\pi} \int_{0}^{\pi} xf( \sin x) dx = \frac{1}{2} \int_{0}^{\pi} f(\sin x) dx \dots \ctext{3}
+    \end{equation*}
+
+    以上の $\ctext{1}, \ctext{2}, \ctext{3}$ より、
+
+    \begin{equation*}
+        \int_{0}^{\frac{\pi}{2}} f(\cos x)dx = \int_{0}^{\frac{\pi}{2}} f(\sin x)dx = \frac{1}{2} \int_{0}^{\pi}f(\sin x)dx = \frac{1}{\pi} \int_{0}^{\pi}xf(\sin x)dx
+    \end{equation*}
+
+    \question{練習問題 1.3}
+    次の定積分の値を求めよ。\\ \\
+
+    (1) $\displaystyle \int_{1}^{2} x \log x dx$ \\
+
+    \begin{align*}
+        \int_{1}^{2} x \log x dx &= \int_{1}^{2} \left(\frac{1}{2}x^2\right)^{\prime} \log x dx \\
+        &= \left[\frac{1}{2}x^2 \log x\right]_{1}^{2} - \int_{1}^{2} \frac{1}{2} xdx \\
+        &= \frac{1}{2} (4 \log 2 - 1 \log 1) - \frac{1}{4} \left[x^2\right]_{1}^{2} \\
+        &= 2 \log 2 - \frac{1}{4} (4 - 1) \\
+        &= \log 4 - \frac{3}{4}
+    \end{align*}
+
+    (2) $\displaystyle \int_{0}^{1} \frac{1}{x^2 - x + 1} dx$ \\
+
+    \begin{align*}
+        \int_{0}^{1} \frac{1}{x^2 - x + 1} dx &= \int_{0}^{1} \frac{1}{\left(x - \dfrac{1}{2}\right)^2 + \dfrac{3}{4}} dx \\
+        &= \frac{2}{\sqrt{3}} \left[\arctan \frac{2}{\sqrt{3}}\left(x - \frac{1}{2}\right)\right]_{0}^{1} \dots \ctext{1} \\
+        &= \frac{2}{\sqrt{3}} \left\{\arctan \frac{1}{\sqrt{3}} - \arctan\left(-\frac{1}{\sqrt{3}}\right)\right\} \\
+        &= \frac{2}{\sqrt{3}} \left(\frac{\pi}{6} + \frac{\pi}{6}\right) \\
+        &= \frac{2\sqrt{3}}{9} \pi
+    \end{align*}
+
+    \begin{screen}
+        $\ctext{1}$ は、$ \displaystyle \int \frac{1}{\left(x + a\right)^2 + b - a^2} dx = \frac{1}{\sqrt{b - a^2}} \arctan \frac{x + a}{\sqrt{b - a^2}} + C \quad (C は積分定数)$
+        を用いて計算しています。暗記をする必要は全くなく、余力のある方は式変形をして成り立つことを確認してみましょう。
+    \end{screen}
+    \\
+
+    (3) $\displaystyle \int_{0}^{1} x \arctan x dx$ \\
+
+    \begin{align*}
+        \int_{0}^{1} x \arctan x dx &= \int_{0}^{1} \left(\frac{1}{2}x^2\right)^{\prime} \arctan xdx \\
+        &= \frac{1}{2} \left[x^2 \arctan x\right]_{0}^{1} - \frac{1}{2} \int_{0}^{1} \frac{x^2}{1 + x^2} dx \\
+        &= \frac{1}{2} (1 \arctan1 - 0) - \frac{1}{2} \int_{0}^{1} \left(1 - \frac{1}{1 + x^2}\right)dx \\
+        &= \frac{\pi}{8} - \frac{1}{2} + \frac{1}{2} \int_{0}^{1} \frac{1}{1 + x^2} dx \\
+        &= \frac{\pi}{8} - \frac{1}{2} + \frac{1}{2} \left[\arctan x\right]_{0}^{1} \\
+        &= \frac{\pi}{4} - \frac{1}{2}
+    \end{align*}
+
+    (4) $\displaystyle \int_{0}^{2} \sqrt{|x^2 - 1|} dx$ \\
+
+    \begin{align*}
+        \begin{cases}
+          |x^2 - 1| = x^2 - 1 & (x \geq 1, x \leq 1) \\
+          |x^2 - 1| = - (x^2 - 1) & (-1 \leq x \leq 1)
+        \end{cases}
+    \end{align*}
+    
+    であるから、
+    \begin{align*}
+        \int_{0}^{2} \sqrt{|x^2 - 1|} dx &= \int_{0}^{1} \sqrt{1 - x^2} dx + \int_{1}^{2} \sqrt{x^2 - 1} dx \\
+        &= \pi 1^2 \frac{1}{4} + \frac{1}{2} \left[x\sqrt{x^2 - 1} - \log \left|x + \sqrt{x^2 - 1}\right|\right]_{1}^{2} \\
+        &= \frac{\pi}{4} + \frac{1}{2} \left\{2\sqrt{3} - \log(2 + \sqrt{3}) - 0\right\} \\
+        &= \frac{\pi}{4} + \sqrt{3} - \frac{1}{2} \log (2 + \sqrt{3})
+    \end{align*}
+
+    \begin{screen}
+        $\ctext{1}$ は、$ \displaystyle \int \sqrt{x^2 + a} dx = \frac{1}{2} (x\sqrt{x^2 + a} + a\log \left|x + \sqrt{x^2 + a}\right|) + C \quad (C は積分定数)$
+        を用いて計算しています。こちらも (2) 同様、暗記をする必要は全くなく、余力のある方は式変形をして成り立つことを確認してみましょう。
+    \end{screen}
+    \\
+
+    (5) $\displaystyle \int_{0}^{1} \arcsin \sqrt{\frac{x}{1 + x}} dx$ \\
+
+    \begin{equation*}
+        \int_{0}^{1} \arcsin \sqrt{\frac{x}{1 + x}} dx = \int_{0}^{1} (x)^{\prime} \arcsin \sqrt{\frac{x}{1 + x}} dx
+    \end{equation*}
+
+    ここで、
+    \begin{align*}
+        \left(\frac{\sqrt{x}}{\sqrt{1 + x}}\right)^{\prime} &= \frac{\dfrac{1}{2\sqrt{x}}\sqrt{1 + x} - \sqrt{x}\dfrac{1}{2\sqrt{1 + x}}}{1 + x} \\
+        &= \frac{1 + x - x}{(1 + x)2 \sqrt{x}\sqrt{1 + x}} \\
+        &= \frac{1}{(1 + x)2\sqrt{x}\sqrt{1 + x}}
+    \end{align*}
+
+    これを利用すると、
+    \begin{align*}
+        \int_{0}^{1} \arcsin \sqrt{\frac{x}{1 + x}} dx &= \left[x \arcsin \sqrt{\dfrac{x}{1 + x}}\right]_{0}^{1} - \int_{0}^{1} x \frac{\dfrac{1}{(1 + x)2\sqrt{x}\sqrt{1 + x}}}{\sqrt{1 - \dfrac{x}{1 + x}}} dx \\
+        &= \arcsin \frac{1}{\sqrt{2}} - \int_0^1 x \frac{1}{(1 + x)2 \sqrt{x} \sqrt{1 + x} \dfrac{1 + x - 1}{1 + x}} dx \\
+        &= \frac{\pi}{4} - \int_{0}^{1} \frac{x \sqrt{1 + x}}{(1 + x)2 \sqrt{x} \sqrt{1 + x}} dx \\
+        &= \frac{\pi}{4} - \int_{0}^{1} \frac{x}{2 \sqrt{x} (1 + x)} dx \dots \ctext{1}
+    \end{align*}
+
+    ここで、$\displaystyle \int_{0}^{1} \frac{x}{2 \sqrt{x} (1 + x)} dx$ について $\displaystyle \sqrt{x} = t$ とすると、$x = t^2$ であり $dx = 2tdt$ となり、
+    $x$ が $0 \rightarrow 1$ の時 $t$ は $0 \rightarrow 1$ であるから、
+
+    \begin{align*}
+        \int_{0}^{1} \frac{x}{2 \sqrt{x} (1 + x)} dx &= \int_{0}^{1} \frac{t^2}{2t(1 + t)^2}2tdt \\
+        &= \int_{0}^{1} \frac{t^2}{1 + t^2} dt \\
+        &= \int_{0}^{1} \left(1 - \frac{1}{1 + t^2}\right) dt \\
+        &= \left[t - \arctan t\right]_{0}^{1} \\
+        &= 1 - \frac{\pi}{4}
+    \end{align*}
+
+    これを $\ctext{1}$ に代入すると、$\displaystyle \frac{\pi}{4} - \left(1 - \frac{\pi}{4}\right) = \frac{\pi}{2} - 1$
+
+    したがって、
+    \begin{equation*}
+        \int_{0}^{1} \arcsin \sqrt{\frac{x}{1 + x}} dx = \frac{\pi}{2} - 1
+    \end{equation*}
+
+    (6) $\displaystyle \int_{a}^{b} \sqrt{(x - a)(x - b)} dx \quad (a < b)$ \\
+
+
+\end{document}
